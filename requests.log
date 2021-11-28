@@ -5010,3 +5010,680 @@
 2021-11-22 00:31:36.212346305 UTC    INFO rocket::server - [32mResponse succeeded.[0m
 2021-11-22 00:43:14.587126406 UTC    WARN rocket::server - Received SIGINT. Requesting shutdown.  (/home/boyinrust/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/server.rs:440)
 2021-11-22 00:43:14.587997488 UTC    INFO rocket::server - Received shutdown request. Waiting for pending I/O...
+2021-11-24 22:09:55.964964 UTC       INFO rust_web_api::connection - linking db!
+2021-11-24 22:09:56.467376 UTC       INFO rust_web_api::connection - db linking successful
+2021-11-24 22:09:56.471615 UTC       WARN rocket::config::config - 🔧 Configured for debug.  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:309)
+2021-11-24 22:09:56.471648 UTC       WARN rocket::config::config - address: [1;49;39m127.0.0.1[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:311)
+2021-11-24 22:09:56.471662 UTC       WARN rocket::config::config - port: [1;49;39m8000[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:312)
+2021-11-24 22:09:56.471672 UTC       WARN rocket::config::config - workers: [1;49;39m12[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:313)
+2021-11-24 22:09:56.471688 UTC       WARN rocket::config::config - ident: [1;49;39mRocket[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:314)
+2021-11-24 22:09:56.471704 UTC       WARN rocket::config::config - keep-alive: [1;49;39m5s[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:318)
+2021-11-24 22:09:56.471739 UTC       WARN rocket::config::config - limits: [1;49;39mbytes = 8KiB, data-form = 2MiB, file = 1MiB, form = 32KiB, json = 1MiB, msgpack = 1MiB, string = 8KiB[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:323)
+2021-11-24 22:09:56.471750 UTC       WARN rocket::config::config - tls: [1;49;39mdisabled[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:326)
+2021-11-24 22:09:56.471764 UTC       WARN rocket::config::config - secret key: [1;49;39m[generated][0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:330)
+2021-11-24 22:09:56.471768 UTC       WARN rocket::config::config - secrets enabled without a stable `secret_key`  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:332)
+2021-11-24 22:09:56.471771 UTC       WARN rocket::config::config - disable `secrets` feature or configure a `secret_key`  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:333)
+2021-11-24 22:09:56.471777 UTC       WARN rocket::config::config - this becomes an [31merror[0m in non-debug profiles  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:334)
+2021-11-24 22:09:56.471788 UTC       WARN rocket::config::config - temp dir: [1;49;39m/var/folders/w_/n1_w13b97_58y0xmyb937qbh0000gn/T/[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:338)
+2021-11-24 22:09:56.471796 UTC       WARN rocket::config::config - log level: [1;49;39mnormal[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:339)
+2021-11-24 22:09:56.471807 UTC       WARN rocket::config::config - cli colors: [1;49;39mtrue[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:340)
+2021-11-24 22:09:56.471822 UTC       WARN rocket::config::config - shutdown: [1;49;39mctrlc = true, force = true, signals = [SIGTERM], grace = 2s, mercy = 3s[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:341)
+2021-11-24 22:09:56.472034 UTC       WARN rocket::rocket - 🛰  [35mRoutes[0m:  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:534)
+2021-11-24 22:09:56.472519 UTC       WARN rocket::rocket - [36m([0m[37mnew[0m[36m)[0m [32mPOST[0m [4;34m/api/v1[0m[34m/user[0m [33mapplication/json[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:541)
+2021-11-24 22:09:56.472567 UTC       WARN rocket::rocket - [36m([0m[37mget[0m[36m)[0m [32mGET[0m [4;34m/api/v1[0m[34m/user[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:541)
+2021-11-24 22:09:56.472598 UTC       WARN rocket::rocket - [36m([0m[37mlogin[0m[36m)[0m [32mGET[0m [4;34m/api/v1[0m[34m/login[0m [33mapplication/json[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:541)
+2021-11-24 22:09:56.472624 UTC       WARN rocket::rocket - [36m([0m[37mlogout[0m[36m)[0m [32mPOST[0m [4;34m/api/v1[0m[34m/logout[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:541)
+2021-11-24 22:09:56.472652 UTC       WARN rocket::rocket - [36m([0m[37madd[0m[36m)[0m [32mPOST[0m [4;34m/api/v1[0m[34m/category[0m [33mapplication/json[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:541)
+2021-11-24 22:09:56.472677 UTC       WARN rocket::rocket - [36m([0m[37mget_one[0m[36m)[0m [32mGET[0m [4;34m/api/v1[0m[34m/category[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:541)
+2021-11-24 22:09:56.472701 UTC       WARN rocket::rocket - [36m([0m[37mget_one[0m[36m)[0m [32mGET[0m [4;34m/api/v1[0m[34m/user/<ido>[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:541)
+2021-11-24 22:09:56.472729 UTC       WARN rocket::rocket - [36m([0m[37medit[0m[36m)[0m [32mPUT[0m [4;34m/api/v1[0m[34m/user/<email>[0m [33mapplication/json[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:541)
+2021-11-24 22:09:56.472762 UTC       WARN rocket::rocket - [36m([0m[37mput[0m[36m)[0m [32mPUT[0m [4;34m/api/v1[0m[34m/category/<id>[0m [33mapplication/json[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:541)
+2021-11-24 22:09:56.472788 UTC       WARN rocket::rocket - [36m([0m[37mget[0m[36m)[0m [32mGET[0m [4;34m/api/v1[0m[34m/category/<name>[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:541)
+2021-11-24 22:09:56.472813 UTC       WARN rocket::rocket - [36m([0m[37mdelete[0m[36m)[0m [32mDELETE[0m [4;34m/api/v1[0m[34m/user/<name>/delete[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:541)
+2021-11-24 22:09:56.472839 UTC       WARN rocket::rocket - [36m([0m[37mfetch_by_cookie[0m[36m)[0m [32mGET[0m [4;34m/api/v1[0m[34m/user/cookie/<email>[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:541)
+2021-11-24 22:09:56.472864 UTC       WARN rocket::rocket - [36m([0m[37mdelete[0m[36m)[0m [32mDELETE[0m [4;34m/api/v1[0m[34m/category/<name>/delete[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:541)
+2021-11-24 22:09:56.472883 UTC       WARN rocket::rocket - 👾 [35mCatchers[0m:  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:534)
+2021-11-24 22:09:56.472905 UTC       WARN rocket::rocket - [36m([0m[37mnot_found[0m[36m)[0m [34m404[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:541)
+2021-11-24 22:09:56.472948 UTC       WARN rocket::fairing::fairings - 📡 [35mFairings[0m:  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/fairing/fairings.rs:166)
+2021-11-24 22:09:56.472979 UTC       WARN rocket::fairing::fairings - [1;49;39mShield[0m ([1;34mliftoff, response, singleton[0m)  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/fairing/fairings.rs:169)
+2021-11-24 22:09:56.473636 UTC       INFO rocket::shield::shield - 🛡️ [35mShield[0m:
+2021-11-24 22:09:56.473664 UTC       INFO rocket::shield::shield - X-Frame-Options: [49;39mSAMEORIGIN[0m
+2021-11-24 22:09:56.473675 UTC       INFO rocket::shield::shield - X-Content-Type-Options: [49;39mnosniff[0m
+2021-11-24 22:09:56.473685 UTC       INFO rocket::shield::shield - Permissions-Policy: [49;39minterest-cohort=()[0m
+2021-11-24 22:09:56.473727 UTC       WARN rocket::rocket - 🚀 [1;49;39mRocket has launched from[0m [1;4;49;39mhttp://127.0.0.1:8000[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:624)
+2021-11-24 22:11:01.425358 UTC       INFO rocket::server - [32mGET[0m [34m/[0m [33mtext[0m[33m/[0m[33mhtml[0m:
+2021-11-24 22:11:01.425471 UTC       ERROR rocket::server - No matching routes for [32mGET[0m [34m/[0m [33mtext[0m[33m/[0m[33mhtml[0m.  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/server.rs:293)
+2021-11-24 22:11:01.425578 UTC       WARN rocket::server - Responding with registered [36m([0m[37mnot_found[0m[36m)[0m [34m404[0m catcher.  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/server.rs:318)
+2021-11-24 22:11:01.425845 UTC       INFO rocket::server - [32mResponse succeeded.[0m
+2021-11-24 22:11:01.517102 UTC       INFO rocket::server - [32mGET[0m [34m/favicon.ico[0m [33mimage[0m[33m/[0m[33mavif[0m:
+2021-11-24 22:11:01.517205 UTC       ERROR rocket::server - No matching routes for [32mGET[0m [34m/favicon.ico[0m [33mimage[0m[33m/[0m[33mavif[0m.  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/server.rs:293)
+2021-11-24 22:11:01.517251 UTC       WARN rocket::server - Responding with registered [36m([0m[37mnot_found[0m[36m)[0m [34m404[0m catcher.  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/server.rs:318)
+2021-11-24 22:11:01.517468 UTC       INFO rocket::server - [32mResponse succeeded.[0m
+2021-11-24 22:11:07.814248 UTC       INFO rocket::server - [32mGET[0m [34m/api/v1[0m [33mtext[0m[33m/[0m[33mhtml[0m:
+2021-11-24 22:11:07.814345 UTC       ERROR rocket::server - No matching routes for [32mGET[0m [34m/api/v1[0m [33mtext[0m[33m/[0m[33mhtml[0m.  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/server.rs:293)
+2021-11-24 22:11:07.814385 UTC       WARN rocket::server - Responding with registered [36m([0m[37mnot_found[0m[36m)[0m [34m404[0m catcher.  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/server.rs:318)
+2021-11-24 22:11:07.814576 UTC       INFO rocket::server - [32mResponse succeeded.[0m
+2021-11-24 22:11:12.677123 UTC       INFO rocket::server - [32mGET[0m [34m/api/v1/user[0m [33mtext[0m[33m/[0m[33mhtml[0m:
+2021-11-24 22:11:12.677217 UTC       INFO rocket::server - Matched: [36m([0m[37mget[0m[36m)[0m [32mGET[0m [4;34m/api/v1[0m[34m/user[0m
+2021-11-24 22:11:13.232898 UTC       WARN rust_web_api::routes::user - `AuthenticatedUser` request guard failed: ErrorT { status: Status { code: 417 }, message: "Data not valid on server, try again" }.  (src/routes/user.rs:74)
+2021-11-24 22:11:13.232949 UTC       INFO rocket::server - [1;49;39mOutcome:[0m [49;31mFailure[0m
+2021-11-24 22:11:13.232977 UTC       WARN rocket::server - No [1;34m417[0m catcher registered. Using Rocket default.  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/server.rs:325)
+2021-11-24 22:11:13.233274 UTC       INFO rocket::server - [32mResponse succeeded.[0m
+2021-11-24 22:11:34.929722 UTC       INFO rocket::server - [32mGET[0m [34m/api/v1/user[0m [33mtext[0m[33m/[0m[33mhtml[0m:
+2021-11-24 22:11:34.929842 UTC       INFO rocket::server - Matched: [36m([0m[37mget[0m[36m)[0m [32mGET[0m [4;34m/api/v1[0m[34m/user[0m
+2021-11-24 22:11:35.346135 UTC       WARN rust_web_api::routes::user - `AuthenticatedUser` request guard failed: ErrorT { status: Status { code: 417 }, message: "Data not valid on server, try again" }.  (src/routes/user.rs:74)
+2021-11-24 22:11:35.346184 UTC       INFO rocket::server - [1;49;39mOutcome:[0m [49;31mFailure[0m
+2021-11-24 22:11:35.346207 UTC       WARN rocket::server - No [1;34m417[0m catcher registered. Using Rocket default.  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/server.rs:325)
+2021-11-24 22:11:35.346452 UTC       INFO rocket::server - [32mResponse succeeded.[0m
+2021-11-24 22:13:19.476555 UTC       INFO rocket::server - [32mGET[0m [34m/api/v1/user[0m:
+2021-11-24 22:13:19.476649 UTC       INFO rocket::server - Matched: [36m([0m[37mget[0m[36m)[0m [32mGET[0m [4;34m/api/v1[0m[34m/user[0m
+2021-11-24 22:13:19.967177 UTC       WARN rust_web_api::routes::user - `AuthenticatedUser` request guard failed: ErrorT { status: Status { code: 417 }, message: "Data not valid on server, try again" }.  (src/routes/user.rs:74)
+2021-11-24 22:13:19.967230 UTC       INFO rocket::server - [1;49;39mOutcome:[0m [49;31mFailure[0m
+2021-11-24 22:13:19.967259 UTC       WARN rocket::server - No [1;34m417[0m catcher registered. Using Rocket default.  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/server.rs:325)
+2021-11-24 22:13:19.967540 UTC       INFO rocket::server - [32mResponse succeeded.[0m
+2021-11-24 22:13:32.774298 UTC       INFO rocket::server - [32mGET[0m [34m/api/v1/user/onoja[0m:
+2021-11-24 22:13:32.774398 UTC       INFO rocket::server - Matched: [36m([0m[37mget_one[0m[36m)[0m [32mGET[0m [4;34m/api/v1[0m[34m/user/<ido>[0m
+2021-11-24 22:13:33.162218 UTC       WARN rust_web_api::routes::user - `AuthenticatedUser` request guard failed: ErrorT { status: Status { code: 417 }, message: "Data not valid on server, try again" }.  (src/routes/user.rs:89)
+2021-11-24 22:13:33.162271 UTC       INFO rocket::server - [1;49;39mOutcome:[0m [49;31mFailure[0m
+2021-11-24 22:13:33.162293 UTC       WARN rocket::server - No [1;34m417[0m catcher registered. Using Rocket default.  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/server.rs:325)
+2021-11-24 22:13:33.162528 UTC       INFO rocket::server - [32mResponse succeeded.[0m
+2021-11-24 22:13:40.392 UTC          INFO rocket::server - [32mGET[0m [34m/api/v1/users/[0m:
+2021-11-24 22:13:40.392094 UTC       ERROR rocket::server - No matching routes for [32mGET[0m [34m/api/v1/users/[0m.  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/server.rs:293)
+2021-11-24 22:13:40.392138 UTC       WARN rocket::server - Responding with registered [36m([0m[37mnot_found[0m[36m)[0m [34m404[0m catcher.  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/server.rs:318)
+2021-11-24 22:13:40.392327 UTC       INFO rocket::server - [32mResponse succeeded.[0m
+2021-11-24 22:13:44.383223 UTC       INFO rocket::server - [32mGET[0m [34m/api/v1/user/[0m:
+2021-11-24 22:13:44.383320 UTC       INFO rocket::server - Matched: [36m([0m[37mget[0m[36m)[0m [32mGET[0m [4;34m/api/v1[0m[34m/user[0m
+2021-11-24 22:13:44.863110 UTC       WARN rust_web_api::routes::user - `AuthenticatedUser` request guard failed: ErrorT { status: Status { code: 417 }, message: "Data not valid on server, try again" }.  (src/routes/user.rs:74)
+2021-11-24 22:13:44.863153 UTC       INFO rocket::server - [1;49;39mOutcome:[0m [49;31mFailure[0m
+2021-11-24 22:13:44.863175 UTC       WARN rocket::server - No [1;34m417[0m catcher registered. Using Rocket default.  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/server.rs:325)
+2021-11-24 22:13:44.863408 UTC       INFO rocket::server - [32mResponse succeeded.[0m
+2021-11-24 22:15:13.233984 UTC       INFO rocket::server - [32mGET[0m [34m/api/v1/login/[0m:
+2021-11-24 22:15:13.234091 UTC       INFO rocket::server - Matched: [36m([0m[37mlogin[0m[36m)[0m [32mGET[0m [4;34m/api/v1[0m[34m/login[0m [33mapplication/json[0m
+2021-11-24 22:15:17.960571 UTC       INFO rocket::server - [1;49;39mOutcome:[0m [49;32mSuccess[0m
+2021-11-24 22:15:17.961160 UTC       INFO rocket::server - [32mResponse succeeded.[0m
+2021-11-24 22:15:25.814378 UTC       INFO rocket::server - [32mGET[0m [34m/api/v1/logout/[0m:
+2021-11-24 22:15:25.814471 UTC       ERROR rocket::server - No matching routes for [32mGET[0m [34m/api/v1/logout/[0m.  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/server.rs:293)
+2021-11-24 22:15:25.814512 UTC       WARN rocket::server - Responding with registered [36m([0m[37mnot_found[0m[36m)[0m [34m404[0m catcher.  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/server.rs:318)
+2021-11-24 22:15:25.814707 UTC       INFO rocket::server - [32mResponse succeeded.[0m
+2021-11-24 22:15:36.321801 UTC       INFO rocket::server - [32mGET[0m [34m/api/v1/user/logout/[0m:
+2021-11-24 22:15:36.321896 UTC       INFO rocket::server - Matched: [36m([0m[37mget_one[0m[36m)[0m [32mGET[0m [4;34m/api/v1[0m[34m/user/<ido>[0m
+2021-11-24 22:15:36.980979 UTC       WARN rust_web_api::routes::user - `AuthenticatedUser` request guard failed: ErrorT { status: Status { code: 417 }, message: "Data not valid on server, try again" }.  (src/routes/user.rs:89)
+2021-11-24 22:15:36.981031 UTC       INFO rocket::server - [1;49;39mOutcome:[0m [49;31mFailure[0m
+2021-11-24 22:15:36.981055 UTC       WARN rocket::server - No [1;34m417[0m catcher registered. Using Rocket default.  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/server.rs:325)
+2021-11-24 22:15:36.981289 UTC       INFO rocket::server - [32mResponse succeeded.[0m
+2021-11-24 22:15:52.001973 UTC       INFO rocket::server - [32mGET[0m [34m/api/v1/user/[0m:
+2021-11-24 22:15:52.002065 UTC       INFO rocket::server - Matched: [36m([0m[37mget[0m[36m)[0m [32mGET[0m [4;34m/api/v1[0m[34m/user[0m
+2021-11-24 22:15:52.428242 UTC       WARN rust_web_api::routes::user - `AuthenticatedUser` request guard failed: ErrorT { status: Status { code: 417 }, message: "Data not valid on server, try again" }.  (src/routes/user.rs:74)
+2021-11-24 22:15:52.428286 UTC       INFO rocket::server - [1;49;39mOutcome:[0m [49;31mFailure[0m
+2021-11-24 22:15:52.428308 UTC       WARN rocket::server - No [1;34m417[0m catcher registered. Using Rocket default.  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/server.rs:325)
+2021-11-24 22:15:52.428536 UTC       INFO rocket::server - [32mResponse succeeded.[0m
+2021-11-24 22:16:28.041137 UTC       INFO rocket::server - [32mGET[0m [34m/api/v1/user/[0m:
+2021-11-24 22:16:28.041285 UTC       INFO rocket::server - Matched: [36m([0m[37mget[0m[36m)[0m [32mGET[0m [4;34m/api/v1[0m[34m/user[0m
+2021-11-24 22:16:33.868109 UTC       INFO rocket::server - [1;49;39mOutcome:[0m [49;32mSuccess[0m
+2021-11-24 22:16:33.868380 UTC       INFO rocket::server - [32mResponse succeeded.[0m
+2021-11-24 22:17:00.304744 UTC       WARN rocket::server - Received SIGINT. Requesting shutdown.  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/server.rs:440)
+2021-11-24 22:17:00.304887 UTC       INFO rocket::server - Received shutdown request. Waiting for pending I/O...
+2021-11-24 22:43:16.533480 UTC       INFO rust_web_api::connection - linking db!
+2021-11-24 22:43:17.524577 UTC       INFO rust_web_api::connection - db linking successful
+2021-11-24 22:43:17.528990 UTC       WARN rocket::config::config - 🔧 Configured for debug.  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:309)
+2021-11-24 22:43:17.529025 UTC       WARN rocket::config::config - address: [1;49;39m127.0.0.1[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:311)
+2021-11-24 22:43:17.529039 UTC       WARN rocket::config::config - port: [1;49;39m8000[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:312)
+2021-11-24 22:43:17.529049 UTC       WARN rocket::config::config - workers: [1;49;39m12[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:313)
+2021-11-24 22:43:17.529066 UTC       WARN rocket::config::config - ident: [1;49;39mRocket[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:314)
+2021-11-24 22:43:17.529080 UTC       WARN rocket::config::config - keep-alive: [1;49;39m5s[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:318)
+2021-11-24 22:43:17.529117 UTC       WARN rocket::config::config - limits: [1;49;39mbytes = 8KiB, data-form = 2MiB, file = 1MiB, form = 32KiB, json = 1MiB, msgpack = 1MiB, string = 8KiB[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:323)
+2021-11-24 22:43:17.529125 UTC       WARN rocket::config::config - tls: [1;49;39mdisabled[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:326)
+2021-11-24 22:43:17.529139 UTC       WARN rocket::config::config - secret key: [1;49;39m[generated][0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:330)
+2021-11-24 22:43:17.529143 UTC       WARN rocket::config::config - secrets enabled without a stable `secret_key`  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:332)
+2021-11-24 22:43:17.529146 UTC       WARN rocket::config::config - disable `secrets` feature or configure a `secret_key`  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:333)
+2021-11-24 22:43:17.529152 UTC       WARN rocket::config::config - this becomes an [31merror[0m in non-debug profiles  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:334)
+2021-11-24 22:43:17.529164 UTC       WARN rocket::config::config - temp dir: [1;49;39m/var/folders/w_/n1_w13b97_58y0xmyb937qbh0000gn/T/[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:338)
+2021-11-24 22:43:17.529172 UTC       WARN rocket::config::config - log level: [1;49;39mnormal[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:339)
+2021-11-24 22:43:17.529182 UTC       WARN rocket::config::config - cli colors: [1;49;39mtrue[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:340)
+2021-11-24 22:43:17.529198 UTC       WARN rocket::config::config - shutdown: [1;49;39mctrlc = true, force = true, signals = [SIGTERM], grace = 2s, mercy = 3s[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:341)
+2021-11-24 22:43:17.529481 UTC       WARN rocket::rocket - 🛰  [35mRoutes[0m:  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:534)
+2021-11-24 22:43:17.530294 UTC       WARN rocket::rocket - [36m([0m[37mnew[0m[36m)[0m [32mPOST[0m [4;34m/api/v1[0m[34m/user[0m [33mapplication/json[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:541)
+2021-11-24 22:43:17.530335 UTC       WARN rocket::rocket - [36m([0m[37mget[0m[36m)[0m [32mGET[0m [4;34m/api/v1[0m[34m/user[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:541)
+2021-11-24 22:43:17.530356 UTC       WARN rocket::rocket - [36m([0m[37mlogin[0m[36m)[0m [32mGET[0m [4;34m/api/v1[0m[34m/login[0m [33mapplication/json[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:541)
+2021-11-24 22:43:17.530391 UTC       WARN rocket::rocket - [36m([0m[37mlogout[0m[36m)[0m [32mPOST[0m [4;34m/api/v1[0m[34m/logout[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:541)
+2021-11-24 22:43:17.530432 UTC       WARN rocket::rocket - [36m([0m[37madd[0m[36m)[0m [32mPOST[0m [4;34m/api/v1[0m[34m/category[0m [33mapplication/json[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:541)
+2021-11-24 22:43:17.530459 UTC       WARN rocket::rocket - [36m([0m[37mget_one[0m[36m)[0m [32mGET[0m [4;34m/api/v1[0m[34m/category[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:541)
+2021-11-24 22:43:17.530546 UTC       WARN rocket::rocket - [36m([0m[37mget_one[0m[36m)[0m [32mGET[0m [4;34m/api/v1[0m[34m/user/<id>[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:541)
+2021-11-24 22:43:17.530582 UTC       WARN rocket::rocket - [36m([0m[37medit[0m[36m)[0m [32mPUT[0m [4;34m/api/v1[0m[34m/user/<email>[0m [33mapplication/json[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:541)
+2021-11-24 22:43:17.530610 UTC       WARN rocket::rocket - [36m([0m[37mput[0m[36m)[0m [32mPUT[0m [4;34m/api/v1[0m[34m/category/<id>[0m [33mapplication/json[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:541)
+2021-11-24 22:43:17.530634 UTC       WARN rocket::rocket - [36m([0m[37mget[0m[36m)[0m [32mGET[0m [4;34m/api/v1[0m[34m/category/<name>[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:541)
+2021-11-24 22:43:17.530659 UTC       WARN rocket::rocket - [36m([0m[37mdelete[0m[36m)[0m [32mDELETE[0m [4;34m/api/v1[0m[34m/user/<name>/delete[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:541)
+2021-11-24 22:43:17.530685 UTC       WARN rocket::rocket - [36m([0m[37mfetch_by_cookie[0m[36m)[0m [32mGET[0m [4;34m/api/v1[0m[34m/user/cookie/<email>[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:541)
+2021-11-24 22:43:17.530710 UTC       WARN rocket::rocket - [36m([0m[37mdelete[0m[36m)[0m [32mDELETE[0m [4;34m/api/v1[0m[34m/category/<name>/delete[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:541)
+2021-11-24 22:43:17.530733 UTC       WARN rocket::rocket - 👾 [35mCatchers[0m:  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:534)
+2021-11-24 22:43:17.530806 UTC       WARN rocket::rocket - [36m([0m[37mnot_found[0m[36m)[0m [34m404[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:541)
+2021-11-24 22:43:17.530891 UTC       WARN rocket::fairing::fairings - 📡 [35mFairings[0m:  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/fairing/fairings.rs:166)
+2021-11-24 22:43:17.530926 UTC       WARN rocket::fairing::fairings - [1;49;39mShield[0m ([1;34mliftoff, response, singleton[0m)  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/fairing/fairings.rs:169)
+2021-11-24 22:43:17.531585 UTC       INFO rocket::shield::shield - 🛡️ [35mShield[0m:
+2021-11-24 22:43:17.531614 UTC       INFO rocket::shield::shield - Permissions-Policy: [49;39minterest-cohort=()[0m
+2021-11-24 22:43:17.531624 UTC       INFO rocket::shield::shield - X-Content-Type-Options: [49;39mnosniff[0m
+2021-11-24 22:43:17.531633 UTC       INFO rocket::shield::shield - X-Frame-Options: [49;39mSAMEORIGIN[0m
+2021-11-24 22:43:17.531664 UTC       WARN rocket::rocket - 🚀 [1;49;39mRocket has launched from[0m [1;4;49;39mhttp://127.0.0.1:8000[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:624)
+2021-11-24 22:44:04.246032 UTC       INFO rocket::server - [32mGET[0m [34m/api/v1/user/[0m:
+2021-11-24 22:44:04.246135 UTC       INFO rocket::server - Matched: [36m([0m[37mget[0m[36m)[0m [32mGET[0m [4;34m/api/v1[0m[34m/user[0m
+2021-11-24 22:44:04.825552 UTC       WARN rust_web_api::routes::user - `AuthenticatedUser` request guard failed: ErrorT { status: Status { code: 401 }, message: "Not authorized to make request" }.  (src/routes/user.rs:74)
+2021-11-24 22:44:04.825594 UTC       INFO rocket::server - [1;49;39mOutcome:[0m [49;31mFailure[0m
+2021-11-24 22:44:04.825617 UTC       WARN rocket::server - No [1;34m401[0m catcher registered. Using Rocket default.  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/server.rs:325)
+2021-11-24 22:44:04.825896 UTC       INFO rocket::server - [32mResponse succeeded.[0m
+2021-11-24 22:44:13.538108 UTC       INFO rocket::server - [32mGET[0m [34m/api/v1/user/[0m:
+2021-11-24 22:44:13.538197 UTC       INFO rocket::server - Matched: [36m([0m[37mget[0m[36m)[0m [32mGET[0m [4;34m/api/v1[0m[34m/user[0m
+2021-11-24 22:44:13.969377 UTC       WARN rust_web_api::routes::user - `AuthenticatedUser` request guard failed: ErrorT { status: Status { code: 401 }, message: "Not authorized to make request" }.  (src/routes/user.rs:74)
+2021-11-24 22:44:13.969420 UTC       INFO rocket::server - [1;49;39mOutcome:[0m [49;31mFailure[0m
+2021-11-24 22:44:13.969443 UTC       WARN rocket::server - No [1;34m401[0m catcher registered. Using Rocket default.  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/server.rs:325)
+2021-11-24 22:44:13.969672 UTC       INFO rocket::server - [32mResponse succeeded.[0m
+2021-11-24 22:44:45.903860 UTC       INFO rocket::server - [32mGET[0m [34m/api/v1/user/samuelonoja970@gmail.com[0m:
+2021-11-24 22:44:45.903965 UTC       INFO rocket::server - Matched: [36m([0m[37mget_one[0m[36m)[0m [32mGET[0m [4;34m/api/v1[0m[34m/user/<id>[0m
+2021-11-24 22:44:46.847441 UTC       WARN rust_web_api::routes::user - `AuthenticatedUser` request guard failed: ErrorT { status: Status { code: 401 }, message: "Not authorized to make request" }.  (src/routes/user.rs:89)
+2021-11-24 22:44:46.847504 UTC       INFO rocket::server - [1;49;39mOutcome:[0m [49;31mFailure[0m
+2021-11-24 22:44:46.847534 UTC       WARN rocket::server - No [1;34m401[0m catcher registered. Using Rocket default.  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/server.rs:325)
+2021-11-24 22:44:46.847832 UTC       INFO rocket::server - [32mResponse succeeded.[0m
+2021-11-24 22:45:17.063929 UTC       INFO rocket::server - [32mGET[0m [34m/api/v1/user/samuelonoja970@gmail.com[0m:
+2021-11-24 22:45:17.064023 UTC       INFO rocket::server - Matched: [36m([0m[37mget_one[0m[36m)[0m [32mGET[0m [4;34m/api/v1[0m[34m/user/<id>[0m
+2021-11-24 22:45:23.007944 UTC       WARN rust_web_api::routes::user - `AuthenticatedUser` request guard failed: ErrorT { status: Status { code: 203 }, message: "Unauthorized" }.  (src/routes/user.rs:89)
+2021-11-24 22:45:23.007988 UTC       INFO rocket::server - [1;49;39mOutcome:[0m [49;31mFailure[0m
+2021-11-24 22:45:23.008015 UTC       WARN rocket::server - No [1;34m203[0m catcher registered. Using Rocket default.  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/server.rs:325)
+2021-11-24 22:45:23.008352 UTC       INFO rocket::server - [32mResponse succeeded.[0m
+2021-11-24 22:45:30.274902 UTC       INFO rocket::server - [32mGET[0m [34m/api/v1/user/samuelonoja970@gmail.com[0m:
+2021-11-24 22:45:30.275045 UTC       INFO rocket::server - Matched: [36m([0m[37mget_one[0m[36m)[0m [32mGET[0m [4;34m/api/v1[0m[34m/user/<id>[0m
+2021-11-24 22:45:36.980982 UTC       INFO rocket::server - [1;49;39mOutcome:[0m [49;32mSuccess[0m
+2021-11-24 22:45:36.981191 UTC       INFO rocket::server - [32mResponse succeeded.[0m
+2021-11-24 22:46:37.696033 UTC       INFO rocket::server - [32mGET[0m [34m/api/v1/login[0m:
+2021-11-24 22:46:37.696133 UTC       INFO rocket::server - Matched: [36m([0m[37mlogin[0m[36m)[0m [32mGET[0m [4;34m/api/v1[0m[34m/login[0m [33mapplication/json[0m
+2021-11-24 22:46:41.083533 UTC       INFO rocket::server - [1;49;39mOutcome:[0m [49;32mSuccess[0m
+2021-11-24 22:46:41.083767 UTC       INFO rocket::server - [32mResponse succeeded.[0m
+2021-11-24 22:46:45.954181 UTC       INFO rocket::server - [32mPOST[0m [34m/api/v1/login[0m:
+2021-11-24 22:46:45.954266 UTC       ERROR rocket::server - No matching routes for [32mPOST[0m [34m/api/v1/login[0m.  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/server.rs:293)
+2021-11-24 22:46:45.954311 UTC       WARN rocket::server - Responding with registered [36m([0m[37mnot_found[0m[36m)[0m [34m404[0m catcher.  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/server.rs:318)
+2021-11-24 22:46:45.954513 UTC       INFO rocket::server - [32mResponse succeeded.[0m
+2021-11-24 22:46:47.662392 UTC       INFO rocket::server - [32mPOST[0m [34m/api/v1/login[0m:
+2021-11-24 22:46:47.662471 UTC       ERROR rocket::server - No matching routes for [32mPOST[0m [34m/api/v1/login[0m.  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/server.rs:293)
+2021-11-24 22:46:47.662512 UTC       WARN rocket::server - Responding with registered [36m([0m[37mnot_found[0m[36m)[0m [34m404[0m catcher.  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/server.rs:318)
+2021-11-24 22:46:47.662702 UTC       INFO rocket::server - [32mResponse succeeded.[0m
+2021-11-24 22:46:51.584056 UTC       INFO rocket::server - [32mGET[0m [34m/api/v1/login[0m:
+2021-11-24 22:46:51.584159 UTC       INFO rocket::server - Matched: [36m([0m[37mlogin[0m[36m)[0m [32mGET[0m [4;34m/api/v1[0m[34m/login[0m [33mapplication/json[0m
+2021-11-24 22:46:54.807806 UTC       INFO rocket::server - [1;49;39mOutcome:[0m [49;32mSuccess[0m
+2021-11-24 22:46:54.808030 UTC       INFO rocket::server - [32mResponse succeeded.[0m
+2021-11-25 07:06:39.782170 UTC       WARN rocket::server - Received SIGINT. Requesting shutdown.  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/server.rs:440)
+2021-11-25 07:06:39.782577 UTC       INFO rocket::server - Received shutdown request. Waiting for pending I/O...
+2021-11-25 11:53:43.173484 UTC       INFO rust_web_api::connection - linking db!
+2021-11-25 11:53:44.102820 UTC       INFO rust_web_api::connection - db linking successful
+2021-11-25 11:53:44.111892 UTC       WARN rocket::config::config - 🔧 Configured for debug.  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:309)
+2021-11-25 11:53:44.111929 UTC       WARN rocket::config::config - address: [1;49;39m127.0.0.1[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:311)
+2021-11-25 11:53:44.111943 UTC       WARN rocket::config::config - port: [1;49;39m8000[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:312)
+2021-11-25 11:53:44.111953 UTC       WARN rocket::config::config - workers: [1;49;39m12[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:313)
+2021-11-25 11:53:44.111970 UTC       WARN rocket::config::config - ident: [1;49;39mRocket[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:314)
+2021-11-25 11:53:44.111988 UTC       WARN rocket::config::config - keep-alive: [1;49;39m5s[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:318)
+2021-11-25 11:53:44.112030 UTC       WARN rocket::config::config - limits: [1;49;39mbytes = 8KiB, data-form = 2MiB, file = 1MiB, form = 32KiB, json = 1MiB, msgpack = 1MiB, string = 8KiB[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:323)
+2021-11-25 11:53:44.112045 UTC       WARN rocket::config::config - tls: [1;49;39mdisabled[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:326)
+2021-11-25 11:53:44.112060 UTC       WARN rocket::config::config - secret key: [1;49;39m[generated][0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:330)
+2021-11-25 11:53:44.112063 UTC       WARN rocket::config::config - secrets enabled without a stable `secret_key`  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:332)
+2021-11-25 11:53:44.112066 UTC       WARN rocket::config::config - disable `secrets` feature or configure a `secret_key`  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:333)
+2021-11-25 11:53:44.112072 UTC       WARN rocket::config::config - this becomes an [31merror[0m in non-debug profiles  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:334)
+2021-11-25 11:53:44.112086 UTC       WARN rocket::config::config - temp dir: [1;49;39m/var/folders/w_/n1_w13b97_58y0xmyb937qbh0000gn/T/[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:338)
+2021-11-25 11:53:44.112095 UTC       WARN rocket::config::config - log level: [1;49;39mnormal[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:339)
+2021-11-25 11:53:44.112106 UTC       WARN rocket::config::config - cli colors: [1;49;39mtrue[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:340)
+2021-11-25 11:53:44.112124 UTC       WARN rocket::config::config - shutdown: [1;49;39mctrlc = true, force = true, signals = [SIGTERM], grace = 2s, mercy = 3s[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:341)
+2021-11-25 11:53:44.112434 UTC       WARN rocket::rocket - 🛰  [35mRoutes[0m:  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:534)
+2021-11-25 11:53:44.113048 UTC       WARN rocket::rocket - [36m([0m[37mnew[0m[36m)[0m [32mPOST[0m [4;34m/api/v1[0m[34m/user[0m [33mapplication/json[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:541)
+2021-11-25 11:53:44.113123 UTC       WARN rocket::rocket - [36m([0m[37mget[0m[36m)[0m [32mGET[0m [4;34m/api/v1[0m[34m/user[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:541)
+2021-11-25 11:53:44.113146 UTC       WARN rocket::rocket - [36m([0m[37mlogin[0m[36m)[0m [32mGET[0m [4;34m/api/v1[0m[34m/login[0m [33mapplication/json[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:541)
+2021-11-25 11:53:44.113163 UTC       WARN rocket::rocket - [36m([0m[37mlogout[0m[36m)[0m [32mPOST[0m [4;34m/api/v1[0m[34m/logout[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:541)
+2021-11-25 11:53:44.113183 UTC       WARN rocket::rocket - [36m([0m[37madd[0m[36m)[0m [32mPOST[0m [4;34m/api/v1[0m[34m/category[0m [33mapplication/json[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:541)
+2021-11-25 11:53:44.113200 UTC       WARN rocket::rocket - [36m([0m[37mget_one[0m[36m)[0m [32mGET[0m [4;34m/api/v1[0m[34m/category[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:541)
+2021-11-25 11:53:44.113217 UTC       WARN rocket::rocket - [36m([0m[37mget_one[0m[36m)[0m [32mGET[0m [4;34m/api/v1[0m[34m/user/<id>[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:541)
+2021-11-25 11:53:44.113238 UTC       WARN rocket::rocket - [36m([0m[37medit[0m[36m)[0m [32mPUT[0m [4;34m/api/v1[0m[34m/user/<email>[0m [33mapplication/json[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:541)
+2021-11-25 11:53:44.113264 UTC       WARN rocket::rocket - [36m([0m[37mput[0m[36m)[0m [32mPUT[0m [4;34m/api/v1[0m[34m/category/<id>[0m [33mapplication/json[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:541)
+2021-11-25 11:53:44.113288 UTC       WARN rocket::rocket - [36m([0m[37mget[0m[36m)[0m [32mGET[0m [4;34m/api/v1[0m[34m/category/<name>[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:541)
+2021-11-25 11:53:44.113317 UTC       WARN rocket::rocket - [36m([0m[37mdelete[0m[36m)[0m [32mDELETE[0m [4;34m/api/v1[0m[34m/user/<name>/delete[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:541)
+2021-11-25 11:53:44.113349 UTC       WARN rocket::rocket - [36m([0m[37mfetch_by_cookie[0m[36m)[0m [32mGET[0m [4;34m/api/v1[0m[34m/user/cookie/<email>[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:541)
+2021-11-25 11:53:44.113374 UTC       WARN rocket::rocket - [36m([0m[37mdelete[0m[36m)[0m [32mDELETE[0m [4;34m/api/v1[0m[34m/category/<name>/delete[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:541)
+2021-11-25 11:53:44.113404 UTC       WARN rocket::rocket - 👾 [35mCatchers[0m:  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:534)
+2021-11-25 11:53:44.113457 UTC       WARN rocket::rocket - [36m([0m[37mnot_found[0m[36m)[0m [34m404[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:541)
+2021-11-25 11:53:44.113507 UTC       WARN rocket::fairing::fairings - 📡 [35mFairings[0m:  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/fairing/fairings.rs:166)
+2021-11-25 11:53:44.113546 UTC       WARN rocket::fairing::fairings - [1;49;39mShield[0m ([1;34mliftoff, response, singleton[0m)  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/fairing/fairings.rs:169)
+2021-11-25 11:53:44.114117 UTC       INFO rocket::shield::shield - 🛡️ [35mShield[0m:
+2021-11-25 11:53:44.114139 UTC       INFO rocket::shield::shield - X-Content-Type-Options: [49;39mnosniff[0m
+2021-11-25 11:53:44.114146 UTC       INFO rocket::shield::shield - X-Frame-Options: [49;39mSAMEORIGIN[0m
+2021-11-25 11:53:44.114153 UTC       INFO rocket::shield::shield - Permissions-Policy: [49;39minterest-cohort=()[0m
+2021-11-25 11:53:44.114185 UTC       WARN rocket::rocket - 🚀 [1;49;39mRocket has launched from[0m [1;4;49;39mhttp://127.0.0.1:8000[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:624)
+2021-11-25 11:54:21.246900 UTC       INFO rocket::server - [32mGET[0m [34m/api/v1/login[0m:
+2021-11-25 11:54:21.247010 UTC       INFO rocket::server - Matched: [36m([0m[37mlogin[0m[36m)[0m [32mGET[0m [4;34m/api/v1[0m[34m/login[0m [33mapplication/json[0m
+2021-11-25 11:54:25.980559 UTC       INFO rocket::server - [1;49;39mOutcome:[0m [49;32mSuccess[0m
+2021-11-25 11:54:25.980820 UTC       INFO rocket::server - [32mResponse succeeded.[0m
+2021-11-25 11:54:35.428512 UTC       INFO rocket::server - [32mGET[0m [34m/api/v1/login[0m:
+2021-11-25 11:54:35.428615 UTC       INFO rocket::server - Matched: [36m([0m[37mlogin[0m[36m)[0m [32mGET[0m [4;34m/api/v1[0m[34m/login[0m [33mapplication/json[0m
+2021-11-25 11:54:38.667222 UTC       INFO rocket::server - [1;49;39mOutcome:[0m [49;32mSuccess[0m
+2021-11-25 11:54:38.667816 UTC       INFO rocket::server - [32mResponse succeeded.[0m
+2021-11-25 11:54:51.079614 UTC       INFO rocket::server - [32mGET[0m [34m/api/v1/users[0m:
+2021-11-25 11:54:51.079700 UTC       ERROR rocket::server - No matching routes for [32mGET[0m [34m/api/v1/users[0m.  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/server.rs:293)
+2021-11-25 11:54:51.079735 UTC       WARN rocket::server - Responding with registered [36m([0m[37mnot_found[0m[36m)[0m [34m404[0m catcher.  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/server.rs:318)
+2021-11-25 11:54:51.079932 UTC       INFO rocket::server - [32mResponse succeeded.[0m
+2021-11-25 11:54:56.443621 UTC       INFO rocket::server - [32mGET[0m [34m/api/v1/users/[0m:
+2021-11-25 11:54:56.443740 UTC       ERROR rocket::server - No matching routes for [32mGET[0m [34m/api/v1/users/[0m.  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/server.rs:293)
+2021-11-25 11:54:56.443812 UTC       WARN rocket::server - Responding with registered [36m([0m[37mnot_found[0m[36m)[0m [34m404[0m catcher.  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/server.rs:318)
+2021-11-25 11:54:56.444047 UTC       INFO rocket::server - [32mResponse succeeded.[0m
+2021-11-25 11:54:59.042 UTC          INFO rocket::server - [32mGET[0m [34m/api/v1/user/[0m:
+2021-11-25 11:54:59.042090 UTC       INFO rocket::server - Matched: [36m([0m[37mget[0m[36m)[0m [32mGET[0m [4;34m/api/v1[0m[34m/user[0m
+2021-11-25 11:55:05.168805 UTC       INFO rocket::server - [1;49;39mOutcome:[0m [49;32mSuccess[0m
+2021-11-25 11:55:05.169012 UTC       INFO rocket::server - [32mResponse succeeded.[0m
+2021-11-25 11:55:16.761240 UTC       INFO rocket::server - [32mGET[0m [34m/api/v1/user/[0m:
+2021-11-25 11:55:16.761331 UTC       INFO rocket::server - Matched: [36m([0m[37mget[0m[36m)[0m [32mGET[0m [4;34m/api/v1[0m[34m/user[0m
+2021-11-25 11:55:17.134664 UTC       WARN rust_web_api::routes::user - `AuthenticatedUser` request guard failed: ErrorT { status: Status { code: 401 }, message: "Not authorized to make request" }.  (src/routes/user.rs:74)
+2021-11-25 11:55:17.134717 UTC       INFO rocket::server - [1;49;39mOutcome:[0m [49;31mFailure[0m
+2021-11-25 11:55:17.134746 UTC       WARN rocket::server - No [1;34m401[0m catcher registered. Using Rocket default.  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/server.rs:325)
+2021-11-25 11:55:17.135019 UTC       INFO rocket::server - [32mResponse succeeded.[0m
+2021-11-25 12:03:39.045974 UTC       WARN rocket::server - Received SIGINT. Requesting shutdown.  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/server.rs:440)
+2021-11-25 12:03:39.046506 UTC       INFO rocket::server - Received shutdown request. Waiting for pending I/O...
+2021-11-27 19:36:01.624975 UTC       INFO rust_web_api::connection - linking db!
+2021-11-27 19:36:02.150687 UTC       INFO rust_web_api::connection - db linking successful
+2021-11-27 19:36:02.155281 UTC       WARN rocket::config::config - 🔧 Configured for debug.  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:309)
+2021-11-27 19:36:02.155325 UTC       WARN rocket::config::config - address: [1;49;39m127.0.0.1[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:311)
+2021-11-27 19:36:02.155347 UTC       WARN rocket::config::config - port: [1;49;39m8000[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:312)
+2021-11-27 19:36:02.155361 UTC       WARN rocket::config::config - workers: [1;49;39m12[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:313)
+2021-11-27 19:36:02.155377 UTC       WARN rocket::config::config - ident: [1;49;39mRocket[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:314)
+2021-11-27 19:36:02.155389 UTC       WARN rocket::config::config - keep-alive: [1;49;39m5s[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:318)
+2021-11-27 19:36:02.155424 UTC       WARN rocket::config::config - limits: [1;49;39mbytes = 8KiB, data-form = 2MiB, file = 1MiB, form = 32KiB, json = 1MiB, msgpack = 1MiB, string = 8KiB[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:323)
+2021-11-27 19:36:02.155433 UTC       WARN rocket::config::config - tls: [1;49;39mdisabled[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:326)
+2021-11-27 19:36:02.155478 UTC       WARN rocket::config::config - secret key: [1;49;39m[generated][0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:330)
+2021-11-27 19:36:02.155495 UTC       WARN rocket::config::config - secrets enabled without a stable `secret_key`  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:332)
+2021-11-27 19:36:02.155503 UTC       WARN rocket::config::config - disable `secrets` feature or configure a `secret_key`  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:333)
+2021-11-27 19:36:02.155512 UTC       WARN rocket::config::config - this becomes an [31merror[0m in non-debug profiles  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:334)
+2021-11-27 19:36:02.155573 UTC       WARN rocket::config::config - temp dir: [1;49;39m/var/folders/w_/n1_w13b97_58y0xmyb937qbh0000gn/T/[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:338)
+2021-11-27 19:36:02.155591 UTC       WARN rocket::config::config - log level: [1;49;39mnormal[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:339)
+2021-11-27 19:36:02.155605 UTC       WARN rocket::config::config - cli colors: [1;49;39mtrue[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:340)
+2021-11-27 19:36:02.155628 UTC       WARN rocket::config::config - shutdown: [1;49;39mctrlc = true, force = true, signals = [SIGTERM], grace = 2s, mercy = 3s[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:341)
+2021-11-27 19:36:02.155955 UTC       WARN rocket::rocket - 🛰  [35mRoutes[0m:  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:534)
+2021-11-27 19:36:02.156405 UTC       WARN rocket::rocket - [36m([0m[37mnew[0m[36m)[0m [32mPOST[0m [4;34m/api/v1[0m[34m/user[0m [33mapplication/json[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:541)
+2021-11-27 19:36:02.156431 UTC       WARN rocket::rocket - [36m([0m[37mget[0m[36m)[0m [32mGET[0m [4;34m/api/v1[0m[34m/user[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:541)
+2021-11-27 19:36:02.156448 UTC       WARN rocket::rocket - [36m([0m[37mlogin[0m[36m)[0m [32mGET[0m [4;34m/api/v1[0m[34m/login[0m [33mapplication/json[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:541)
+2021-11-27 19:36:02.156462 UTC       WARN rocket::rocket - [36m([0m[37mlogout[0m[36m)[0m [32mPOST[0m [4;34m/api/v1[0m[34m/logout[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:541)
+2021-11-27 19:36:02.156479 UTC       WARN rocket::rocket - [36m([0m[37madd[0m[36m)[0m [32mPOST[0m [4;34m/api/v1[0m[34m/category[0m [33mapplication/json[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:541)
+2021-11-27 19:36:02.156496 UTC       WARN rocket::rocket - [36m([0m[37mget_one[0m[36m)[0m [32mGET[0m [4;34m/api/v1[0m[34m/category[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:541)
+2021-11-27 19:36:02.156512 UTC       WARN rocket::rocket - [36m([0m[37mget_one[0m[36m)[0m [32mGET[0m [4;34m/api/v1[0m[34m/user/<id>[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:541)
+2021-11-27 19:36:02.156528 UTC       WARN rocket::rocket - [36m([0m[37medit[0m[36m)[0m [32mPUT[0m [4;34m/api/v1[0m[34m/user/<email>[0m [33mapplication/json[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:541)
+2021-11-27 19:36:02.156546 UTC       WARN rocket::rocket - [36m([0m[37mput[0m[36m)[0m [32mPUT[0m [4;34m/api/v1[0m[34m/category/<id>[0m [33mapplication/json[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:541)
+2021-11-27 19:36:02.156562 UTC       WARN rocket::rocket - [36m([0m[37mget[0m[36m)[0m [32mGET[0m [4;34m/api/v1[0m[34m/category/<name>[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:541)
+2021-11-27 19:36:02.156576 UTC       WARN rocket::rocket - [36m([0m[37mdelete[0m[36m)[0m [32mDELETE[0m [4;34m/api/v1[0m[34m/user/<name>/delete[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:541)
+2021-11-27 19:36:02.156590 UTC       WARN rocket::rocket - [36m([0m[37mfetch_by_cookie[0m[36m)[0m [32mGET[0m [4;34m/api/v1[0m[34m/user/cookie/<email>[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:541)
+2021-11-27 19:36:02.156604 UTC       WARN rocket::rocket - [36m([0m[37mdelete[0m[36m)[0m [32mDELETE[0m [4;34m/api/v1[0m[34m/category/<name>/delete[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:541)
+2021-11-27 19:36:02.156615 UTC       WARN rocket::rocket - 👾 [35mCatchers[0m:  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:534)
+2021-11-27 19:36:02.156633 UTC       WARN rocket::rocket - [36m([0m[37mnot_found[0m[36m)[0m [34m404[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:541)
+2021-11-27 19:36:02.156660 UTC       WARN rocket::fairing::fairings - 📡 [35mFairings[0m:  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/fairing/fairings.rs:166)
+2021-11-27 19:36:02.156679 UTC       WARN rocket::fairing::fairings - [1;49;39mShield[0m ([1;34mliftoff, response, singleton[0m)  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/fairing/fairings.rs:169)
+2021-11-27 19:36:02.157123 UTC       INFO rocket::shield::shield - 🛡️ [35mShield[0m:
+2021-11-27 19:36:02.157140 UTC       INFO rocket::shield::shield - X-Frame-Options: [49;39mSAMEORIGIN[0m
+2021-11-27 19:36:02.157145 UTC       INFO rocket::shield::shield - X-Content-Type-Options: [49;39mnosniff[0m
+2021-11-27 19:36:02.157151 UTC       INFO rocket::shield::shield - Permissions-Policy: [49;39minterest-cohort=()[0m
+2021-11-27 19:36:02.157171 UTC       WARN rocket::rocket - 🚀 [1;49;39mRocket has launched from[0m [1;4;49;39mhttp://127.0.0.1:8000[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:624)
+2021-11-27 19:36:09.911296 UTC       WARN rocket::server - Received SIGINT. Requesting shutdown.  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/server.rs:440)
+2021-11-27 19:36:09.911371 UTC       INFO rocket::server - Received shutdown request. Waiting for pending I/O...
+2021-11-27 19:39:15.814506 UTC       INFO rust_web_api::connection - linking db!
+2021-11-27 19:39:16.302990 UTC       INFO rust_web_api::connection - db linking successful
+2021-11-27 19:39:16.306796 UTC       WARN rocket::config::config - 🔧 Configured for debug.  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:309)
+2021-11-27 19:39:16.306827 UTC       WARN rocket::config::config - address: [1;49;39m127.0.0.1[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:311)
+2021-11-27 19:39:16.306840 UTC       WARN rocket::config::config - port: [1;49;39m8000[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:312)
+2021-11-27 19:39:16.306849 UTC       WARN rocket::config::config - workers: [1;49;39m12[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:313)
+2021-11-27 19:39:16.306862 UTC       WARN rocket::config::config - ident: [1;49;39mRocket[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:314)
+2021-11-27 19:39:16.306874 UTC       WARN rocket::config::config - keep-alive: [1;49;39m5s[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:318)
+2021-11-27 19:39:16.306908 UTC       WARN rocket::config::config - limits: [1;49;39mbytes = 8KiB, data-form = 2MiB, file = 1MiB, form = 32KiB, json = 1MiB, msgpack = 1MiB, string = 8KiB[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:323)
+2021-11-27 19:39:16.306921 UTC       WARN rocket::config::config - tls: [1;49;39mdisabled[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:326)
+2021-11-27 19:39:16.306933 UTC       WARN rocket::config::config - secret key: [1;49;39m[generated][0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:330)
+2021-11-27 19:39:16.306936 UTC       WARN rocket::config::config - secrets enabled without a stable `secret_key`  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:332)
+2021-11-27 19:39:16.306938 UTC       WARN rocket::config::config - disable `secrets` feature or configure a `secret_key`  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:333)
+2021-11-27 19:39:16.306944 UTC       WARN rocket::config::config - this becomes an [31merror[0m in non-debug profiles  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:334)
+2021-11-27 19:39:16.306955 UTC       WARN rocket::config::config - temp dir: [1;49;39m/var/folders/w_/n1_w13b97_58y0xmyb937qbh0000gn/T/[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:338)
+2021-11-27 19:39:16.306962 UTC       WARN rocket::config::config - log level: [1;49;39mnormal[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:339)
+2021-11-27 19:39:16.306970 UTC       WARN rocket::config::config - cli colors: [1;49;39mtrue[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:340)
+2021-11-27 19:39:16.306984 UTC       WARN rocket::config::config - shutdown: [1;49;39mctrlc = true, force = true, signals = [SIGTERM], grace = 2s, mercy = 3s[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:341)
+2021-11-27 19:39:16.307167 UTC       WARN rocket::rocket - 🛰  [35mRoutes[0m:  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:534)
+2021-11-27 19:39:16.307552 UTC       WARN rocket::rocket - [36m([0m[37mnew[0m[36m)[0m [32mPOST[0m [4;34m/api/v1[0m[34m/user[0m [33mapplication/json[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:541)
+2021-11-27 19:39:16.307584 UTC       WARN rocket::rocket - [36m([0m[37mget[0m[36m)[0m [32mGET[0m [4;34m/api/v1[0m[34m/user[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:541)
+2021-11-27 19:39:16.307609 UTC       WARN rocket::rocket - [36m([0m[37mlogin[0m[36m)[0m [32mGET[0m [4;34m/api/v1[0m[34m/login[0m [33mapplication/json[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:541)
+2021-11-27 19:39:16.307629 UTC       WARN rocket::rocket - [36m([0m[37mlogout[0m[36m)[0m [32mPOST[0m [4;34m/api/v1[0m[34m/logout[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:541)
+2021-11-27 19:39:16.307656 UTC       WARN rocket::rocket - [36m([0m[37madd[0m[36m)[0m [32mPOST[0m [4;34m/api/v1[0m[34m/category[0m [33mapplication/json[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:541)
+2021-11-27 19:39:16.307681 UTC       WARN rocket::rocket - [36m([0m[37mget_one[0m[36m)[0m [32mGET[0m [4;34m/api/v1[0m[34m/category[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:541)
+2021-11-27 19:39:16.307700 UTC       WARN rocket::rocket - [36m([0m[37mget_one[0m[36m)[0m [32mGET[0m [4;34m/api/v1[0m[34m/user/<id>[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:541)
+2021-11-27 19:39:16.307726 UTC       WARN rocket::rocket - [36m([0m[37medit[0m[36m)[0m [32mPUT[0m [4;34m/api/v1[0m[34m/user/<email>[0m [33mapplication/json[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:541)
+2021-11-27 19:39:16.307754 UTC       WARN rocket::rocket - [36m([0m[37mput[0m[36m)[0m [32mPUT[0m [4;34m/api/v1[0m[34m/category/<id>[0m [33mapplication/json[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:541)
+2021-11-27 19:39:16.307780 UTC       WARN rocket::rocket - [36m([0m[37mget[0m[36m)[0m [32mGET[0m [4;34m/api/v1[0m[34m/category/<name>[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:541)
+2021-11-27 19:39:16.307802 UTC       WARN rocket::rocket - [36m([0m[37mdelete[0m[36m)[0m [32mDELETE[0m [4;34m/api/v1[0m[34m/user/<name>/delete[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:541)
+2021-11-27 19:39:16.307849 UTC       WARN rocket::rocket - [36m([0m[37mfetch_by_cookie[0m[36m)[0m [32mGET[0m [4;34m/api/v1[0m[34m/user/cookie/<email>[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:541)
+2021-11-27 19:39:16.307888 UTC       WARN rocket::rocket - [36m([0m[37mdelete[0m[36m)[0m [32mDELETE[0m [4;34m/api/v1[0m[34m/category/<name>/delete[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:541)
+2021-11-27 19:39:16.307907 UTC       WARN rocket::rocket - 👾 [35mCatchers[0m:  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:534)
+2021-11-27 19:39:16.307952 UTC       WARN rocket::rocket - [36m([0m[37mnot_found[0m[36m)[0m [34m404[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:541)
+2021-11-27 19:39:16.307998 UTC       WARN rocket::fairing::fairings - 📡 [35mFairings[0m:  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/fairing/fairings.rs:166)
+2021-11-27 19:39:16.308024 UTC       WARN rocket::fairing::fairings - [1;49;39mShield[0m ([1;34mliftoff, response, singleton[0m)  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/fairing/fairings.rs:169)
+2021-11-27 19:39:16.308698 UTC       INFO rocket::shield::shield - 🛡️ [35mShield[0m:
+2021-11-27 19:39:16.308725 UTC       INFO rocket::shield::shield - X-Frame-Options: [49;39mSAMEORIGIN[0m
+2021-11-27 19:39:16.308733 UTC       INFO rocket::shield::shield - X-Content-Type-Options: [49;39mnosniff[0m
+2021-11-27 19:39:16.308742 UTC       INFO rocket::shield::shield - Permissions-Policy: [49;39minterest-cohort=()[0m
+2021-11-27 19:39:16.308778 UTC       WARN rocket::rocket - 🚀 [1;49;39mRocket has launched from[0m [1;4;49;39mhttp://127.0.0.1:8000[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:624)
+2021-11-27 19:39:16.440255 UTC       INFO rocket::server - [32mGET[0m [34m/api/v1/user/[0m:
+2021-11-27 19:39:16.440342 UTC       INFO rocket::server - Matched: [36m([0m[37mget[0m[36m)[0m [32mGET[0m [4;34m/api/v1[0m[34m/user[0m
+2021-11-27 19:39:16.658343 UTC       INFO rocket::server - [32mGET[0m [34m/api/v1/user/[0m:
+2021-11-27 19:39:16.658442 UTC       INFO rocket::server - Matched: [36m([0m[37mget[0m[36m)[0m [32mGET[0m [4;34m/api/v1[0m[34m/user[0m
+2021-11-27 19:39:16.821710 UTC       WARN rust_web_api::routes::user - `AuthenticatedUser` request guard failed: ErrorT { status: Status { code: 401 }, message: "Not authorized to make request" }.  (src/routes/user.rs:74)
+2021-11-27 19:39:16.821740 UTC       INFO rocket::server - [1;49;39mOutcome:[0m [49;31mFailure[0m
+2021-11-27 19:39:16.821758 UTC       WARN rocket::server - No [1;34m401[0m catcher registered. Using Rocket default.  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/server.rs:325)
+2021-11-27 19:39:16.821992 UTC       INFO rocket::server - [32mResponse succeeded.[0m
+2021-11-27 19:39:16.923510 UTC       INFO rocket::server - [32mGET[0m [34m/api/v1/user/[0m:
+2021-11-27 19:39:16.923602 UTC       INFO rocket::server - Matched: [36m([0m[37mget[0m[36m)[0m [32mGET[0m [4;34m/api/v1[0m[34m/user[0m
+2021-11-27 19:39:17.055911 UTC       INFO rocket::server - [32mGET[0m [34m/api/v1/user/[0m:
+2021-11-27 19:39:17.055995 UTC       INFO rocket::server - Matched: [36m([0m[37mget[0m[36m)[0m [32mGET[0m [4;34m/api/v1[0m[34m/user[0m
+2021-11-27 19:39:17.066819 UTC       WARN rust_web_api::routes::user - `AuthenticatedUser` request guard failed: ErrorT { status: Status { code: 401 }, message: "Not authorized to make request" }.  (src/routes/user.rs:74)
+2021-11-27 19:39:17.066855 UTC       INFO rocket::server - [1;49;39mOutcome:[0m [49;31mFailure[0m
+2021-11-27 19:39:17.066875 UTC       WARN rocket::server - No [1;34m401[0m catcher registered. Using Rocket default.  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/server.rs:325)
+2021-11-27 19:39:17.067091 UTC       INFO rocket::server - [32mResponse succeeded.[0m
+2021-11-27 19:39:17.321178 UTC       WARN rust_web_api::routes::user - `AuthenticatedUser` request guard failed: ErrorT { status: Status { code: 401 }, message: "Not authorized to make request" }.  (src/routes/user.rs:74)
+2021-11-27 19:39:17.321227 UTC       INFO rocket::server - [1;49;39mOutcome:[0m [49;31mFailure[0m
+2021-11-27 19:39:17.321251 UTC       WARN rocket::server - No [1;34m401[0m catcher registered. Using Rocket default.  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/server.rs:325)
+2021-11-27 19:39:17.321484 UTC       INFO rocket::server - [32mResponse succeeded.[0m
+2021-11-27 19:39:17.426264 UTC       WARN rust_web_api::routes::user - `AuthenticatedUser` request guard failed: ErrorT { status: Status { code: 401 }, message: "Not authorized to make request" }.  (src/routes/user.rs:74)
+2021-11-27 19:39:17.426310 UTC       INFO rocket::server - [1;49;39mOutcome:[0m [49;31mFailure[0m
+2021-11-27 19:39:17.426333 UTC       WARN rocket::server - No [1;34m401[0m catcher registered. Using Rocket default.  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/server.rs:325)
+2021-11-27 19:39:17.426569 UTC       INFO rocket::server - [32mResponse succeeded.[0m
+2021-11-27 19:39:17.914363 UTC       INFO rocket::server - [32mGET[0m [34m/api/v1/user/[0m:
+2021-11-27 19:39:17.914437 UTC       INFO rocket::server - Matched: [36m([0m[37mget[0m[36m)[0m [32mGET[0m [4;34m/api/v1[0m[34m/user[0m
+2021-11-27 19:39:18.335254 UTC       WARN rust_web_api::routes::user - `AuthenticatedUser` request guard failed: ErrorT { status: Status { code: 401 }, message: "Not authorized to make request" }.  (src/routes/user.rs:74)
+2021-11-27 19:39:18.335287 UTC       INFO rocket::server - [1;49;39mOutcome:[0m [49;31mFailure[0m
+2021-11-27 19:39:18.335305 UTC       WARN rocket::server - No [1;34m401[0m catcher registered. Using Rocket default.  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/server.rs:325)
+2021-11-27 19:39:18.335484 UTC       INFO rocket::server - [32mResponse succeeded.[0m
+2021-11-27 20:06:25.775371 UTC       WARN rocket::server - Received SIGINT. Requesting shutdown.  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/server.rs:440)
+2021-11-27 20:06:25.775622 UTC       INFO rocket::server - Received shutdown request. Waiting for pending I/O...
+2021-11-27 20:55:41.916265 UTC       INFO rust_web_api::connection - linking db!
+2021-11-27 20:55:42.397594 UTC       INFO rust_web_api::connection - db linking successful
+2021-11-27 20:55:42.401193 UTC       WARN rocket::config::config - 🔧 Configured for debug.  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:309)
+2021-11-27 20:55:42.401226 UTC       WARN rocket::config::config - address: [1;49;39m127.0.0.1[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:311)
+2021-11-27 20:55:42.401238 UTC       WARN rocket::config::config - port: [1;49;39m8000[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:312)
+2021-11-27 20:55:42.401246 UTC       WARN rocket::config::config - workers: [1;49;39m12[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:313)
+2021-11-27 20:55:42.401260 UTC       WARN rocket::config::config - ident: [1;49;39mRocket[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:314)
+2021-11-27 20:55:42.401270 UTC       WARN rocket::config::config - keep-alive: [1;49;39m5s[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:318)
+2021-11-27 20:55:42.401305 UTC       WARN rocket::config::config - limits: [1;49;39mbytes = 8KiB, data-form = 2MiB, file = 1MiB, form = 32KiB, json = 1MiB, msgpack = 1MiB, string = 8KiB[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:323)
+2021-11-27 20:55:42.401316 UTC       WARN rocket::config::config - tls: [1;49;39mdisabled[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:326)
+2021-11-27 20:55:42.401328 UTC       WARN rocket::config::config - secret key: [1;49;39m[generated][0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:330)
+2021-11-27 20:55:42.401331 UTC       WARN rocket::config::config - secrets enabled without a stable `secret_key`  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:332)
+2021-11-27 20:55:42.401333 UTC       WARN rocket::config::config - disable `secrets` feature or configure a `secret_key`  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:333)
+2021-11-27 20:55:42.401338 UTC       WARN rocket::config::config - this becomes an [31merror[0m in non-debug profiles  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:334)
+2021-11-27 20:55:42.401348 UTC       WARN rocket::config::config - temp dir: [1;49;39m/var/folders/w_/n1_w13b97_58y0xmyb937qbh0000gn/T/[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:338)
+2021-11-27 20:55:42.401354 UTC       WARN rocket::config::config - log level: [1;49;39mnormal[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:339)
+2021-11-27 20:55:42.401362 UTC       WARN rocket::config::config - cli colors: [1;49;39mtrue[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:340)
+2021-11-27 20:55:42.401375 UTC       WARN rocket::config::config - shutdown: [1;49;39mctrlc = true, force = true, signals = [SIGTERM], grace = 2s, mercy = 3s[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:341)
+2021-11-27 20:55:42.401548 UTC       WARN rocket::rocket - 🛰  [35mRoutes[0m:  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:534)
+2021-11-27 20:55:42.401896 UTC       WARN rocket::rocket - [36m([0m[37mnew[0m[36m)[0m [32mPOST[0m [4;34m/api/v1[0m[34m/user[0m [33mapplication/json[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:541)
+2021-11-27 20:55:42.401918 UTC       WARN rocket::rocket - [36m([0m[37mget[0m[36m)[0m [32mGET[0m [4;34m/api/v1[0m[34m/user[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:541)
+2021-11-27 20:55:42.401934 UTC       WARN rocket::rocket - [36m([0m[37mlogin[0m[36m)[0m [32mGET[0m [4;34m/api/v1[0m[34m/login[0m [33mapplication/json[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:541)
+2021-11-27 20:55:42.401948 UTC       WARN rocket::rocket - [36m([0m[37mlogout[0m[36m)[0m [32mPOST[0m [4;34m/api/v1[0m[34m/logout[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:541)
+2021-11-27 20:55:42.401964 UTC       WARN rocket::rocket - [36m([0m[37madd[0m[36m)[0m [32mPOST[0m [4;34m/api/v1[0m[34m/category[0m [33mapplication/json[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:541)
+2021-11-27 20:55:42.401977 UTC       WARN rocket::rocket - [36m([0m[37mget_one[0m[36m)[0m [32mGET[0m [4;34m/api/v1[0m[34m/category[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:541)
+2021-11-27 20:55:42.401991 UTC       WARN rocket::rocket - [36m([0m[37mget_one[0m[36m)[0m [32mGET[0m [4;34m/api/v1[0m[34m/user/<id>[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:541)
+2021-11-27 20:55:42.402006 UTC       WARN rocket::rocket - [36m([0m[37medit[0m[36m)[0m [32mPUT[0m [4;34m/api/v1[0m[34m/user/<email>[0m [33mapplication/json[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:541)
+2021-11-27 20:55:42.402022 UTC       WARN rocket::rocket - [36m([0m[37mput[0m[36m)[0m [32mPUT[0m [4;34m/api/v1[0m[34m/category/<id>[0m [33mapplication/json[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:541)
+2021-11-27 20:55:42.402036 UTC       WARN rocket::rocket - [36m([0m[37mget[0m[36m)[0m [32mGET[0m [4;34m/api/v1[0m[34m/category/<name>[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:541)
+2021-11-27 20:55:42.402049 UTC       WARN rocket::rocket - [36m([0m[37mdelete[0m[36m)[0m [32mDELETE[0m [4;34m/api/v1[0m[34m/user/<name>/delete[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:541)
+2021-11-27 20:55:42.402063 UTC       WARN rocket::rocket - [36m([0m[37mfetch_by_cookie[0m[36m)[0m [32mGET[0m [4;34m/api/v1[0m[34m/user/cookie/<email>[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:541)
+2021-11-27 20:55:42.402077 UTC       WARN rocket::rocket - [36m([0m[37mdelete[0m[36m)[0m [32mDELETE[0m [4;34m/api/v1[0m[34m/category/<name>/delete[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:541)
+2021-11-27 20:55:42.402086 UTC       WARN rocket::rocket - 👾 [35mCatchers[0m:  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:534)
+2021-11-27 20:55:42.402102 UTC       WARN rocket::rocket - [36m([0m[37mnot_found[0m[36m)[0m [34m404[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:541)
+2021-11-27 20:55:42.402122 UTC       WARN rocket::fairing::fairings - 📡 [35mFairings[0m:  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/fairing/fairings.rs:166)
+2021-11-27 20:55:42.402139 UTC       WARN rocket::fairing::fairings - [1;49;39mShield[0m ([1;34mliftoff, response, singleton[0m)  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/fairing/fairings.rs:169)
+2021-11-27 20:55:42.402529 UTC       INFO rocket::shield::shield - 🛡️ [35mShield[0m:
+2021-11-27 20:55:42.402547 UTC       INFO rocket::shield::shield - X-Content-Type-Options: [49;39mnosniff[0m
+2021-11-27 20:55:42.402556 UTC       INFO rocket::shield::shield - X-Frame-Options: [49;39mSAMEORIGIN[0m
+2021-11-27 20:55:42.402561 UTC       INFO rocket::shield::shield - Permissions-Policy: [49;39minterest-cohort=()[0m
+2021-11-27 20:55:42.402581 UTC       WARN rocket::rocket - 🚀 [1;49;39mRocket has launched from[0m [1;4;49;39mhttp://127.0.0.1:8000[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:624)
+2021-11-27 20:57:24.955294 UTC       INFO rocket::server - [32mGET[0m [34m/api/v1/login/[0m:
+2021-11-27 20:57:24.955389 UTC       INFO rocket::server - Matched: [36m([0m[37mlogin[0m[36m)[0m [32mGET[0m [4;34m/api/v1[0m[34m/login[0m [33mapplication/json[0m
+2021-11-27 20:57:28.663432 UTC       INFO rocket::server - [1;49;39mOutcome:[0m [49;32mSuccess[0m
+2021-11-27 20:57:28.663831 UTC       INFO rocket::server - [32mResponse succeeded.[0m
+2021-11-27 20:57:57.559031 UTC       INFO rocket::server - [32mGET[0m [34m/api/v1/user/[0m:
+2021-11-27 20:57:57.559103 UTC       INFO rocket::server - Matched: [36m([0m[37mget[0m[36m)[0m [32mGET[0m [4;34m/api/v1[0m[34m/user[0m
+2021-11-27 20:57:58.131018 UTC       ERROR rocket::server - Handler [37mget[0m panicked.  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/server.rs:56)
+2021-11-27 20:57:58.131049 UTC       INFO rocket::server - This is an application bug.
+2021-11-27 20:57:58.131054 UTC       INFO rocket::server - A panic in Rust must be treated as an exceptional event.
+2021-11-27 20:57:58.131058 UTC       INFO rocket::server - Panicking is not a suitable error handling mechanism.
+2021-11-27 20:57:58.131067 UTC       INFO rocket::server - Unwinding, the result of a panic, is an expensive operation.
+2021-11-27 20:57:58.131071 UTC       INFO rocket::server - Panics will severely degrade application performance.
+2021-11-27 20:57:58.131127 UTC       INFO rocket::server - Instead of panicking, return `Option` and/or `Result`.
+2021-11-27 20:57:58.131141 UTC       INFO rocket::server - Values of either type can be returned directly from handlers.
+2021-11-27 20:57:58.131148 UTC       WARN rocket::server - A panic is treated as an internal server error.  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/server.rs:56)
+2021-11-27 20:57:58.131176 UTC       INFO rocket::server - [1;49;39mOutcome:[0m [49;31mFailure[0m
+2021-11-27 20:57:58.131214 UTC       WARN rocket::server - No [1;34m500[0m catcher registered. Using Rocket default.  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/server.rs:325)
+2021-11-27 20:57:58.131754 UTC       INFO rocket::server - [32mResponse succeeded.[0m
+2021-11-27 21:01:12.665914 UTC       WARN rocket::server - Received SIGINT. Requesting shutdown.  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/server.rs:440)
+2021-11-27 21:01:12.666041 UTC       INFO rocket::server - Received shutdown request. Waiting for pending I/O...
+2021-11-27 21:01:33.682550 UTC       INFO rust_web_api::connection - linking db!
+2021-11-27 21:01:34.217138 UTC       INFO rust_web_api::connection - db linking successful
+2021-11-27 21:01:34.221176 UTC       WARN rocket::config::config - 🔧 Configured for debug.  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:309)
+2021-11-27 21:01:34.221209 UTC       WARN rocket::config::config - address: [1;49;39m127.0.0.1[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:311)
+2021-11-27 21:01:34.221222 UTC       WARN rocket::config::config - port: [1;49;39m8000[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:312)
+2021-11-27 21:01:34.221230 UTC       WARN rocket::config::config - workers: [1;49;39m12[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:313)
+2021-11-27 21:01:34.221246 UTC       WARN rocket::config::config - ident: [1;49;39mRocket[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:314)
+2021-11-27 21:01:34.221259 UTC       WARN rocket::config::config - keep-alive: [1;49;39m5s[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:318)
+2021-11-27 21:01:34.221293 UTC       WARN rocket::config::config - limits: [1;49;39mbytes = 8KiB, data-form = 2MiB, file = 1MiB, form = 32KiB, json = 1MiB, msgpack = 1MiB, string = 8KiB[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:323)
+2021-11-27 21:01:34.221305 UTC       WARN rocket::config::config - tls: [1;49;39mdisabled[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:326)
+2021-11-27 21:01:34.221317 UTC       WARN rocket::config::config - secret key: [1;49;39m[generated][0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:330)
+2021-11-27 21:01:34.221320 UTC       WARN rocket::config::config - secrets enabled without a stable `secret_key`  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:332)
+2021-11-27 21:01:34.221322 UTC       WARN rocket::config::config - disable `secrets` feature or configure a `secret_key`  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:333)
+2021-11-27 21:01:34.221328 UTC       WARN rocket::config::config - this becomes an [31merror[0m in non-debug profiles  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:334)
+2021-11-27 21:01:34.221338 UTC       WARN rocket::config::config - temp dir: [1;49;39m/var/folders/w_/n1_w13b97_58y0xmyb937qbh0000gn/T/[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:338)
+2021-11-27 21:01:34.221345 UTC       WARN rocket::config::config - log level: [1;49;39mnormal[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:339)
+2021-11-27 21:01:34.221353 UTC       WARN rocket::config::config - cli colors: [1;49;39mtrue[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:340)
+2021-11-27 21:01:34.221367 UTC       WARN rocket::config::config - shutdown: [1;49;39mctrlc = true, force = true, signals = [SIGTERM], grace = 2s, mercy = 3s[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:341)
+2021-11-27 21:01:34.221556 UTC       WARN rocket::rocket - 🛰  [35mRoutes[0m:  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:534)
+2021-11-27 21:01:34.221928 UTC       WARN rocket::rocket - [36m([0m[37mnew[0m[36m)[0m [32mPOST[0m [4;34m/api/v1[0m[34m/user[0m [33mapplication/json[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:541)
+2021-11-27 21:01:34.221952 UTC       WARN rocket::rocket - [36m([0m[37mget[0m[36m)[0m [32mGET[0m [4;34m/api/v1[0m[34m/user[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:541)
+2021-11-27 21:01:34.221969 UTC       WARN rocket::rocket - [36m([0m[37mlogin[0m[36m)[0m [32mGET[0m [4;34m/api/v1[0m[34m/login[0m [33mapplication/json[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:541)
+2021-11-27 21:01:34.221986 UTC       WARN rocket::rocket - [36m([0m[37mlogout[0m[36m)[0m [32mPOST[0m [4;34m/api/v1[0m[34m/logout[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:541)
+2021-11-27 21:01:34.222003 UTC       WARN rocket::rocket - [36m([0m[37madd[0m[36m)[0m [32mPOST[0m [4;34m/api/v1[0m[34m/category[0m [33mapplication/json[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:541)
+2021-11-27 21:01:34.222019 UTC       WARN rocket::rocket - [36m([0m[37mget_one[0m[36m)[0m [32mGET[0m [4;34m/api/v1[0m[34m/category[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:541)
+2021-11-27 21:01:34.222033 UTC       WARN rocket::rocket - [36m([0m[37mget_one[0m[36m)[0m [32mGET[0m [4;34m/api/v1[0m[34m/user/<id>[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:541)
+2021-11-27 21:01:34.222050 UTC       WARN rocket::rocket - [36m([0m[37medit[0m[36m)[0m [32mPUT[0m [4;34m/api/v1[0m[34m/user/<email>[0m [33mapplication/json[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:541)
+2021-11-27 21:01:34.222068 UTC       WARN rocket::rocket - [36m([0m[37mput[0m[36m)[0m [32mPUT[0m [4;34m/api/v1[0m[34m/category/<id>[0m [33mapplication/json[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:541)
+2021-11-27 21:01:34.222084 UTC       WARN rocket::rocket - [36m([0m[37mget[0m[36m)[0m [32mGET[0m [4;34m/api/v1[0m[34m/category/<name>[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:541)
+2021-11-27 21:01:34.222099 UTC       WARN rocket::rocket - [36m([0m[37mdelete[0m[36m)[0m [32mDELETE[0m [4;34m/api/v1[0m[34m/user/<name>/delete[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:541)
+2021-11-27 21:01:34.222113 UTC       WARN rocket::rocket - [36m([0m[37mfetch_by_cookie[0m[36m)[0m [32mGET[0m [4;34m/api/v1[0m[34m/user/cookie/<email>[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:541)
+2021-11-27 21:01:34.222128 UTC       WARN rocket::rocket - [36m([0m[37mdelete[0m[36m)[0m [32mDELETE[0m [4;34m/api/v1[0m[34m/category/<name>/delete[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:541)
+2021-11-27 21:01:34.222138 UTC       WARN rocket::rocket - 👾 [35mCatchers[0m:  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:534)
+2021-11-27 21:01:34.222154 UTC       WARN rocket::rocket - [36m([0m[37mnot_found[0m[36m)[0m [34m404[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:541)
+2021-11-27 21:01:34.222176 UTC       WARN rocket::fairing::fairings - 📡 [35mFairings[0m:  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/fairing/fairings.rs:166)
+2021-11-27 21:01:34.222193 UTC       WARN rocket::fairing::fairings - [1;49;39mShield[0m ([1;34mliftoff, response, singleton[0m)  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/fairing/fairings.rs:169)
+2021-11-27 21:01:34.222592 UTC       INFO rocket::shield::shield - 🛡️ [35mShield[0m:
+2021-11-27 21:01:34.222611 UTC       INFO rocket::shield::shield - X-Content-Type-Options: [49;39mnosniff[0m
+2021-11-27 21:01:34.222617 UTC       INFO rocket::shield::shield - X-Frame-Options: [49;39mSAMEORIGIN[0m
+2021-11-27 21:01:34.222639 UTC       INFO rocket::shield::shield - Permissions-Policy: [49;39minterest-cohort=()[0m
+2021-11-27 21:01:34.222661 UTC       WARN rocket::rocket - 🚀 [1;49;39mRocket has launched from[0m [1;4;49;39mhttp://127.0.0.1:8000[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:624)
+2021-11-27 21:01:37.477823 UTC       INFO rocket::server - [32mGET[0m [34m/api/v1/logout/[0m:
+2021-11-27 21:01:37.477912 UTC       ERROR rocket::server - No matching routes for [32mGET[0m [34m/api/v1/logout/[0m.  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/server.rs:293)
+2021-11-27 21:01:37.477951 UTC       WARN rocket::server - Responding with registered [36m([0m[37mnot_found[0m[36m)[0m [34m404[0m catcher.  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/server.rs:318)
+2021-11-27 21:01:37.478202 UTC       INFO rocket::server - [32mResponse succeeded.[0m
+2021-11-27 21:01:37.822450 UTC       INFO rocket::server - [32mGET[0m [34m/api/v1/logout/[0m:
+2021-11-27 21:01:37.822529 UTC       ERROR rocket::server - No matching routes for [32mGET[0m [34m/api/v1/logout/[0m.  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/server.rs:293)
+2021-11-27 21:01:37.822556 UTC       WARN rocket::server - Responding with registered [36m([0m[37mnot_found[0m[36m)[0m [34m404[0m catcher.  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/server.rs:318)
+2021-11-27 21:01:37.822795 UTC       INFO rocket::server - [32mResponse succeeded.[0m
+2021-11-27 21:01:39.109009 UTC       INFO rocket::server - [32mGET[0m [34m/api/v1/logout/[0m:
+2021-11-27 21:01:39.109085 UTC       ERROR rocket::server - No matching routes for [32mGET[0m [34m/api/v1/logout/[0m.  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/server.rs:293)
+2021-11-27 21:01:39.109119 UTC       WARN rocket::server - Responding with registered [36m([0m[37mnot_found[0m[36m)[0m [34m404[0m catcher.  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/server.rs:318)
+2021-11-27 21:01:39.109277 UTC       INFO rocket::server - [32mResponse succeeded.[0m
+2021-11-27 21:01:49.680448 UTC       INFO rocket::server - [32mPOST[0m [34m/api/v1/logout/[0m:
+2021-11-27 21:01:49.680535 UTC       INFO rocket::server - Matched: [36m([0m[37mlogout[0m[36m)[0m [32mPOST[0m [4;34m/api/v1[0m[34m/logout[0m
+2021-11-27 21:01:49.680636 UTC       INFO rocket::server - [1;49;39mOutcome:[0m [49;32mSuccess[0m
+2021-11-27 21:01:49.680896 UTC       INFO rocket::server - [32mResponse succeeded.[0m
+2021-11-27 21:01:55.725807 UTC       INFO rocket::server - [32mPOST[0m [34m/api/v1/login/[0m:
+2021-11-27 21:01:55.725893 UTC       ERROR rocket::server - No matching routes for [32mPOST[0m [34m/api/v1/login/[0m.  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/server.rs:293)
+2021-11-27 21:01:55.725936 UTC       WARN rocket::server - Responding with registered [36m([0m[37mnot_found[0m[36m)[0m [34m404[0m catcher.  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/server.rs:318)
+2021-11-27 21:01:55.726153 UTC       INFO rocket::server - [32mResponse succeeded.[0m
+2021-11-27 21:02:02.368863 UTC       INFO rocket::server - [32mPOST[0m [34m/api/v1/user/login/[0m:
+2021-11-27 21:02:02.368935 UTC       ERROR rocket::server - No matching routes for [32mPOST[0m [34m/api/v1/user/login/[0m.  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/server.rs:293)
+2021-11-27 21:02:02.368970 UTC       WARN rocket::server - Responding with registered [36m([0m[37mnot_found[0m[36m)[0m [34m404[0m catcher.  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/server.rs:318)
+2021-11-27 21:02:02.369132 UTC       INFO rocket::server - [32mResponse succeeded.[0m
+2021-11-27 21:02:10.999948 UTC       INFO rocket::server - [32mGET[0m [34m/api/v1/login/[0m:
+2021-11-27 21:02:11.000048 UTC       INFO rocket::server - Matched: [36m([0m[37mlogin[0m[36m)[0m [32mGET[0m [4;34m/api/v1[0m[34m/login[0m [33mapplication/json[0m
+2021-11-27 21:02:14.594040 UTC       INFO rocket::server - [1;49;39mOutcome:[0m [49;32mSuccess[0m
+2021-11-27 21:02:14.594440 UTC       INFO rocket::server - [32mResponse succeeded.[0m
+2021-11-27 21:02:40.081834 UTC       INFO rocket::server - [32mGET[0m [34m/api/v1/user/[0m:
+2021-11-27 21:02:40.081916 UTC       INFO rocket::server - Matched: [36m([0m[37mget[0m[36m)[0m [32mGET[0m [4;34m/api/v1[0m[34m/user[0m
+2021-11-27 21:02:42.605344 UTC       WARN rust_web_api::routes::user - `AuthenticatedUser` request guard failed: ErrorT { status: Status { code: 203 }, message: "Unauthorized" }.  (src/routes/user.rs:78)
+2021-11-27 21:02:42.605396 UTC       INFO rocket::server - [1;49;39mOutcome:[0m [49;31mFailure[0m
+2021-11-27 21:02:42.605426 UTC       WARN rocket::server - No [1;34m203[0m catcher registered. Using Rocket default.  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/server.rs:325)
+2021-11-27 21:02:42.605721 UTC       INFO rocket::server - [32mResponse succeeded.[0m
+2021-11-27 21:04:04.284065 UTC       WARN rocket::server - Received SIGINT. Requesting shutdown.  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/server.rs:440)
+2021-11-27 21:04:04.284256 UTC       INFO rocket::server - Received shutdown request. Waiting for pending I/O...
+2021-11-27 21:04:25.416229 UTC       INFO rust_web_api::connection - linking db!
+2021-11-27 21:04:25.938500 UTC       INFO rust_web_api::connection - db linking successful
+2021-11-27 21:04:25.942009 UTC       WARN rocket::config::config - 🔧 Configured for debug.  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:309)
+2021-11-27 21:04:25.942040 UTC       WARN rocket::config::config - address: [1;49;39m127.0.0.1[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:311)
+2021-11-27 21:04:25.942052 UTC       WARN rocket::config::config - port: [1;49;39m8000[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:312)
+2021-11-27 21:04:25.942060 UTC       WARN rocket::config::config - workers: [1;49;39m12[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:313)
+2021-11-27 21:04:25.942074 UTC       WARN rocket::config::config - ident: [1;49;39mRocket[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:314)
+2021-11-27 21:04:25.942084 UTC       WARN rocket::config::config - keep-alive: [1;49;39m5s[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:318)
+2021-11-27 21:04:25.942116 UTC       WARN rocket::config::config - limits: [1;49;39mbytes = 8KiB, data-form = 2MiB, file = 1MiB, form = 32KiB, json = 1MiB, msgpack = 1MiB, string = 8KiB[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:323)
+2021-11-27 21:04:25.942125 UTC       WARN rocket::config::config - tls: [1;49;39mdisabled[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:326)
+2021-11-27 21:04:25.942137 UTC       WARN rocket::config::config - secret key: [1;49;39m[generated][0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:330)
+2021-11-27 21:04:25.942140 UTC       WARN rocket::config::config - secrets enabled without a stable `secret_key`  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:332)
+2021-11-27 21:04:25.942142 UTC       WARN rocket::config::config - disable `secrets` feature or configure a `secret_key`  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:333)
+2021-11-27 21:04:25.942147 UTC       WARN rocket::config::config - this becomes an [31merror[0m in non-debug profiles  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:334)
+2021-11-27 21:04:25.942157 UTC       WARN rocket::config::config - temp dir: [1;49;39m/var/folders/w_/n1_w13b97_58y0xmyb937qbh0000gn/T/[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:338)
+2021-11-27 21:04:25.942164 UTC       WARN rocket::config::config - log level: [1;49;39mnormal[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:339)
+2021-11-27 21:04:25.942172 UTC       WARN rocket::config::config - cli colors: [1;49;39mtrue[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:340)
+2021-11-27 21:04:25.942185 UTC       WARN rocket::config::config - shutdown: [1;49;39mctrlc = true, force = true, signals = [SIGTERM], grace = 2s, mercy = 3s[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:341)
+2021-11-27 21:04:25.942406 UTC       WARN rocket::rocket - 🛰  [35mRoutes[0m:  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:534)
+2021-11-27 21:04:25.942817 UTC       WARN rocket::rocket - [36m([0m[37mnew[0m[36m)[0m [32mPOST[0m [4;34m/api/v1[0m[34m/user[0m [33mapplication/json[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:541)
+2021-11-27 21:04:25.942843 UTC       WARN rocket::rocket - [36m([0m[37mget[0m[36m)[0m [32mGET[0m [4;34m/api/v1[0m[34m/user[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:541)
+2021-11-27 21:04:25.942860 UTC       WARN rocket::rocket - [36m([0m[37mlogin[0m[36m)[0m [32mGET[0m [4;34m/api/v1[0m[34m/login[0m [33mapplication/json[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:541)
+2021-11-27 21:04:25.942875 UTC       WARN rocket::rocket - [36m([0m[37mlogout[0m[36m)[0m [32mPOST[0m [4;34m/api/v1[0m[34m/logout[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:541)
+2021-11-27 21:04:25.942891 UTC       WARN rocket::rocket - [36m([0m[37madd[0m[36m)[0m [32mPOST[0m [4;34m/api/v1[0m[34m/category[0m [33mapplication/json[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:541)
+2021-11-27 21:04:25.942905 UTC       WARN rocket::rocket - [36m([0m[37mget_one[0m[36m)[0m [32mGET[0m [4;34m/api/v1[0m[34m/category[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:541)
+2021-11-27 21:04:25.942919 UTC       WARN rocket::rocket - [36m([0m[37mget_one[0m[36m)[0m [32mGET[0m [4;34m/api/v1[0m[34m/user/<id>[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:541)
+2021-11-27 21:04:25.942935 UTC       WARN rocket::rocket - [36m([0m[37medit[0m[36m)[0m [32mPUT[0m [4;34m/api/v1[0m[34m/user/<email>[0m [33mapplication/json[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:541)
+2021-11-27 21:04:25.942958 UTC       WARN rocket::rocket - [36m([0m[37mput[0m[36m)[0m [32mPUT[0m [4;34m/api/v1[0m[34m/category/<id>[0m [33mapplication/json[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:541)
+2021-11-27 21:04:25.942985 UTC       WARN rocket::rocket - [36m([0m[37mget[0m[36m)[0m [32mGET[0m [4;34m/api/v1[0m[34m/category/<name>[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:541)
+2021-11-27 21:04:25.943009 UTC       WARN rocket::rocket - [36m([0m[37mdelete[0m[36m)[0m [32mDELETE[0m [4;34m/api/v1[0m[34m/user/<name>/delete[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:541)
+2021-11-27 21:04:25.943032 UTC       WARN rocket::rocket - [36m([0m[37mfetch_by_cookie[0m[36m)[0m [32mGET[0m [4;34m/api/v1[0m[34m/user/cookie/<email>[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:541)
+2021-11-27 21:04:25.943054 UTC       WARN rocket::rocket - [36m([0m[37mdelete[0m[36m)[0m [32mDELETE[0m [4;34m/api/v1[0m[34m/category/<name>/delete[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:541)
+2021-11-27 21:04:25.943071 UTC       WARN rocket::rocket - 👾 [35mCatchers[0m:  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:534)
+2021-11-27 21:04:25.943097 UTC       WARN rocket::rocket - [36m([0m[37mnot_found[0m[36m)[0m [34m404[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:541)
+2021-11-27 21:04:25.943126 UTC       WARN rocket::fairing::fairings - 📡 [35mFairings[0m:  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/fairing/fairings.rs:166)
+2021-11-27 21:04:25.943145 UTC       WARN rocket::fairing::fairings - [1;49;39mShield[0m ([1;34mliftoff, response, singleton[0m)  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/fairing/fairings.rs:169)
+2021-11-27 21:04:25.943592 UTC       INFO rocket::shield::shield - 🛡️ [35mShield[0m:
+2021-11-27 21:04:25.943610 UTC       INFO rocket::shield::shield - X-Content-Type-Options: [49;39mnosniff[0m
+2021-11-27 21:04:25.943616 UTC       INFO rocket::shield::shield - X-Frame-Options: [49;39mSAMEORIGIN[0m
+2021-11-27 21:04:25.943625 UTC       INFO rocket::shield::shield - Permissions-Policy: [49;39minterest-cohort=()[0m
+2021-11-27 21:04:25.943646 UTC       WARN rocket::rocket - 🚀 [1;49;39mRocket has launched from[0m [1;4;49;39mhttp://127.0.0.1:8000[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:624)
+2021-11-27 21:04:31.684676 UTC       INFO rocket::server - [32mGET[0m [34m/api/v1/user/[0m:
+2021-11-27 21:04:31.684747 UTC       INFO rocket::server - Matched: [36m([0m[37mget[0m[36m)[0m [32mGET[0m [4;34m/api/v1[0m[34m/user[0m
+2021-11-27 21:04:34.296782 UTC       WARN rust_web_api::routes::user - `AuthenticatedUser` request guard failed: ErrorT { status: Status { code: 203 }, message: "Unauthorized" }.  (src/routes/user.rs:78)
+2021-11-27 21:04:34.296820 UTC       INFO rocket::server - [1;49;39mOutcome:[0m [49;31mFailure[0m
+2021-11-27 21:04:34.296841 UTC       WARN rocket::server - No [1;34m203[0m catcher registered. Using Rocket default.  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/server.rs:325)
+2021-11-27 21:04:34.297113 UTC       INFO rocket::server - [32mResponse succeeded.[0m
+2021-11-27 21:06:38.201689 UTC       WARN rocket::server - Received SIGINT. Requesting shutdown.  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/server.rs:440)
+2021-11-27 21:06:38.201847 UTC       INFO rocket::server - Received shutdown request. Waiting for pending I/O...
+2021-11-27 21:09:34.648742 UTC       INFO rust_web_api::connection - linking db!
+2021-11-27 21:09:35.160006 UTC       INFO rust_web_api::connection - db linking successful
+2021-11-27 21:09:35.164889 UTC       WARN rocket::config::config - 🔧 Configured for debug.  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:309)
+2021-11-27 21:09:35.164930 UTC       WARN rocket::config::config - address: [1;49;39m127.0.0.1[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:311)
+2021-11-27 21:09:35.164947 UTC       WARN rocket::config::config - port: [1;49;39m8000[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:312)
+2021-11-27 21:09:35.164958 UTC       WARN rocket::config::config - workers: [1;49;39m12[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:313)
+2021-11-27 21:09:35.164977 UTC       WARN rocket::config::config - ident: [1;49;39mRocket[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:314)
+2021-11-27 21:09:35.164991 UTC       WARN rocket::config::config - keep-alive: [1;49;39m5s[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:318)
+2021-11-27 21:09:35.165034 UTC       WARN rocket::config::config - limits: [1;49;39mbytes = 8KiB, data-form = 2MiB, file = 1MiB, form = 32KiB, json = 1MiB, msgpack = 1MiB, string = 8KiB[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:323)
+2021-11-27 21:09:35.165044 UTC       WARN rocket::config::config - tls: [1;49;39mdisabled[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:326)
+2021-11-27 21:09:35.165059 UTC       WARN rocket::config::config - secret key: [1;49;39m[generated][0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:330)
+2021-11-27 21:09:35.165063 UTC       WARN rocket::config::config - secrets enabled without a stable `secret_key`  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:332)
+2021-11-27 21:09:35.165066 UTC       WARN rocket::config::config - disable `secrets` feature or configure a `secret_key`  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:333)
+2021-11-27 21:09:35.165074 UTC       WARN rocket::config::config - this becomes an [31merror[0m in non-debug profiles  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:334)
+2021-11-27 21:09:35.165087 UTC       WARN rocket::config::config - temp dir: [1;49;39m/var/folders/w_/n1_w13b97_58y0xmyb937qbh0000gn/T/[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:338)
+2021-11-27 21:09:35.165096 UTC       WARN rocket::config::config - log level: [1;49;39mnormal[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:339)
+2021-11-27 21:09:35.165106 UTC       WARN rocket::config::config - cli colors: [1;49;39mtrue[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:340)
+2021-11-27 21:09:35.165123 UTC       WARN rocket::config::config - shutdown: [1;49;39mctrlc = true, force = true, signals = [SIGTERM], grace = 2s, mercy = 3s[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:341)
+2021-11-27 21:09:35.165447 UTC       WARN rocket::rocket - 🛰  [35mRoutes[0m:  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:534)
+2021-11-27 21:09:35.165957 UTC       WARN rocket::rocket - [36m([0m[37mnew[0m[36m)[0m [32mPOST[0m [4;34m/api/v1[0m[34m/user[0m [33mapplication/json[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:541)
+2021-11-27 21:09:35.166001 UTC       WARN rocket::rocket - [36m([0m[37mget[0m[36m)[0m [32mGET[0m [4;34m/api/v1[0m[34m/user[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:541)
+2021-11-27 21:09:35.166030 UTC       WARN rocket::rocket - [36m([0m[37mlogin[0m[36m)[0m [32mGET[0m [4;34m/api/v1[0m[34m/login[0m [33mapplication/json[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:541)
+2021-11-27 21:09:35.166050 UTC       WARN rocket::rocket - [36m([0m[37mlogout[0m[36m)[0m [32mPOST[0m [4;34m/api/v1[0m[34m/logout[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:541)
+2021-11-27 21:09:35.166073 UTC       WARN rocket::rocket - [36m([0m[37madd[0m[36m)[0m [32mPOST[0m [4;34m/api/v1[0m[34m/category[0m [33mapplication/json[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:541)
+2021-11-27 21:09:35.166093 UTC       WARN rocket::rocket - [36m([0m[37mget_one[0m[36m)[0m [32mGET[0m [4;34m/api/v1[0m[34m/category[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:541)
+2021-11-27 21:09:35.166113 UTC       WARN rocket::rocket - [36m([0m[37mget_one[0m[36m)[0m [32mGET[0m [4;34m/api/v1[0m[34m/user/<id>[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:541)
+2021-11-27 21:09:35.166135 UTC       WARN rocket::rocket - [36m([0m[37medit[0m[36m)[0m [32mPUT[0m [4;34m/api/v1[0m[34m/user/<email>[0m [33mapplication/json[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:541)
+2021-11-27 21:09:35.166158 UTC       WARN rocket::rocket - [36m([0m[37mput[0m[36m)[0m [32mPUT[0m [4;34m/api/v1[0m[34m/category/<id>[0m [33mapplication/json[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:541)
+2021-11-27 21:09:35.166178 UTC       WARN rocket::rocket - [36m([0m[37mget[0m[36m)[0m [32mGET[0m [4;34m/api/v1[0m[34m/category/<name>[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:541)
+2021-11-27 21:09:35.166197 UTC       WARN rocket::rocket - [36m([0m[37mdelete[0m[36m)[0m [32mDELETE[0m [4;34m/api/v1[0m[34m/user/<name>/delete[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:541)
+2021-11-27 21:09:35.166217 UTC       WARN rocket::rocket - [36m([0m[37mfetch_by_cookie[0m[36m)[0m [32mGET[0m [4;34m/api/v1[0m[34m/user/cookie/<email>[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:541)
+2021-11-27 21:09:35.166237 UTC       WARN rocket::rocket - [36m([0m[37mdelete[0m[36m)[0m [32mDELETE[0m [4;34m/api/v1[0m[34m/category/<name>/delete[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:541)
+2021-11-27 21:09:35.166252 UTC       WARN rocket::rocket - 👾 [35mCatchers[0m:  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:534)
+2021-11-27 21:09:35.166277 UTC       WARN rocket::rocket - [36m([0m[37mnot_found[0m[36m)[0m [34m404[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:541)
+2021-11-27 21:09:35.166310 UTC       WARN rocket::fairing::fairings - 📡 [35mFairings[0m:  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/fairing/fairings.rs:166)
+2021-11-27 21:09:35.166330 UTC       WARN rocket::fairing::fairings - [1;49;39mShield[0m ([1;34mliftoff, response, singleton[0m)  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/fairing/fairings.rs:169)
+2021-11-27 21:09:35.166971 UTC       INFO rocket::shield::shield - 🛡️ [35mShield[0m:
+2021-11-27 21:09:35.166988 UTC       INFO rocket::shield::shield - Permissions-Policy: [49;39minterest-cohort=()[0m
+2021-11-27 21:09:35.166995 UTC       INFO rocket::shield::shield - X-Content-Type-Options: [49;39mnosniff[0m
+2021-11-27 21:09:35.167003 UTC       INFO rocket::shield::shield - X-Frame-Options: [49;39mSAMEORIGIN[0m
+2021-11-27 21:09:35.167035 UTC       WARN rocket::rocket - 🚀 [1;49;39mRocket has launched from[0m [1;4;49;39mhttp://127.0.0.1:8000[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:624)
+2021-11-27 21:09:41.566828 UTC       INFO rocket::server - [32mGET[0m [34m/api/v1/user/[0m:
+2021-11-27 21:09:41.566948 UTC       INFO rocket::server - Matched: [36m([0m[37mget[0m[36m)[0m [32mGET[0m [4;34m/api/v1[0m[34m/user[0m
+2021-11-27 21:09:45.384418 UTC       INFO rocket::server - [1;49;39mOutcome:[0m [49;32mSuccess[0m
+2021-11-27 21:09:45.384618 UTC       INFO rocket::server - [32mResponse succeeded.[0m
+2021-11-27 21:12:25.519753 UTC       INFO rocket::server - [32mGET[0m [34m/api/v1/cookie//samuelonoja970@gmail.com[0m:
+2021-11-27 21:12:25.519837 UTC       ERROR rocket::server - No matching routes for [32mGET[0m [34m/api/v1/cookie//samuelonoja970@gmail.com[0m.  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/server.rs:293)
+2021-11-27 21:12:25.519879 UTC       WARN rocket::server - Responding with registered [36m([0m[37mnot_found[0m[36m)[0m [34m404[0m catcher.  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/server.rs:318)
+2021-11-27 21:12:25.520033 UTC       INFO rocket::server - [32mResponse succeeded.[0m
+2021-11-27 21:12:27.220001 UTC       INFO rocket::server - [32mGET[0m [34m/api/v1/cookie/samuelonoja970@gmail.com[0m:
+2021-11-27 21:12:27.220080 UTC       ERROR rocket::server - No matching routes for [32mGET[0m [34m/api/v1/cookie/samuelonoja970@gmail.com[0m.  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/server.rs:293)
+2021-11-27 21:12:27.220115 UTC       WARN rocket::server - Responding with registered [36m([0m[37mnot_found[0m[36m)[0m [34m404[0m catcher.  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/server.rs:318)
+2021-11-27 21:12:27.220282 UTC       INFO rocket::server - [32mResponse succeeded.[0m
+2021-11-27 21:12:34.610791 UTC       INFO rocket::server - [32mGET[0m [34m/api/v1/user/cookie/samuelonoja970@gmail.com[0m:
+2021-11-27 21:12:34.610874 UTC       INFO rocket::server - Matched: [36m([0m[37mfetch_by_cookie[0m[36m)[0m [32mGET[0m [4;34m/api/v1[0m[34m/user/cookie/<email>[0m
+2021-11-27 21:12:34.611094 UTC       INFO rocket::server - [1;49;39mOutcome:[0m [49;32mSuccess[0m
+2021-11-27 21:12:34.611228 UTC       INFO rocket::server - [32mResponse succeeded.[0m
+2021-11-27 21:14:02.686270 UTC       INFO rocket::server - [32mGET[0m [34m/api/v1/user[0m:
+2021-11-27 21:14:02.686350 UTC       INFO rocket::server - Matched: [36m([0m[37mget[0m[36m)[0m [32mGET[0m [4;34m/api/v1[0m[34m/user[0m
+2021-11-27 21:14:05.975076 UTC       INFO rocket::server - [1;49;39mOutcome:[0m [49;32mSuccess[0m
+2021-11-27 21:14:05.975301 UTC       INFO rocket::server - [32mResponse succeeded.[0m
+2021-11-27 21:41:08.914815 UTC       WARN rocket::server - Received SIGINT. Requesting shutdown.  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/server.rs:440)
+2021-11-27 21:43:48.055510 UTC       INFO rust_web_api::connection - linking db!
+2021-11-27 21:43:48.559748 UTC       INFO rust_web_api::connection - db linking successful
+2021-11-27 21:43:48.564915 UTC       WARN rocket::config::config - 🔧 Configured for debug.  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:309)
+2021-11-27 21:43:48.564953 UTC       WARN rocket::config::config - address: [1;49;39m127.0.0.1[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:311)
+2021-11-27 21:43:48.564966 UTC       WARN rocket::config::config - port: [1;49;39m8000[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:312)
+2021-11-27 21:43:48.564975 UTC       WARN rocket::config::config - workers: [1;49;39m12[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:313)
+2021-11-27 21:43:48.564990 UTC       WARN rocket::config::config - ident: [1;49;39mRocket[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:314)
+2021-11-27 21:43:48.565001 UTC       WARN rocket::config::config - keep-alive: [1;49;39m5s[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:318)
+2021-11-27 21:43:48.565036 UTC       WARN rocket::config::config - limits: [1;49;39mbytes = 8KiB, data-form = 2MiB, file = 1MiB, form = 32KiB, json = 1MiB, msgpack = 1MiB, string = 8KiB[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:323)
+2021-11-27 21:43:48.565043 UTC       WARN rocket::config::config - tls: [1;49;39mdisabled[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:326)
+2021-11-27 21:43:48.565055 UTC       WARN rocket::config::config - secret key: [1;49;39m[generated][0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:330)
+2021-11-27 21:43:48.565058 UTC       WARN rocket::config::config - secrets enabled without a stable `secret_key`  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:332)
+2021-11-27 21:43:48.565061 UTC       WARN rocket::config::config - disable `secrets` feature or configure a `secret_key`  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:333)
+2021-11-27 21:43:48.565067 UTC       WARN rocket::config::config - this becomes an [31merror[0m in non-debug profiles  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:334)
+2021-11-27 21:43:48.565077 UTC       WARN rocket::config::config - temp dir: [1;49;39m/var/folders/w_/n1_w13b97_58y0xmyb937qbh0000gn/T/[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:338)
+2021-11-27 21:43:48.565084 UTC       WARN rocket::config::config - log level: [1;49;39mnormal[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:339)
+2021-11-27 21:43:48.565092 UTC       WARN rocket::config::config - cli colors: [1;49;39mtrue[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:340)
+2021-11-27 21:43:48.565107 UTC       WARN rocket::config::config - shutdown: [1;49;39mctrlc = true, force = true, signals = [SIGTERM], grace = 2s, mercy = 3s[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/config/config.rs:341)
+2021-11-27 21:43:48.565308 UTC       WARN rocket::rocket - 🛰  [35mRoutes[0m:  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:534)
+2021-11-27 21:43:48.566169 UTC       WARN rocket::rocket - [36m([0m[37mnew[0m[36m)[0m [32mPOST[0m [4;34m/api/v1[0m[34m/user[0m [33mapplication/json[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:541)
+2021-11-27 21:43:48.566297 UTC       WARN rocket::rocket - [36m([0m[37mget[0m[36m)[0m [32mGET[0m [4;34m/api/v1[0m[34m/user[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:541)
+2021-11-27 21:43:48.566342 UTC       WARN rocket::rocket - [36m([0m[37mlogin[0m[36m)[0m [32mGET[0m [4;34m/api/v1[0m[34m/login[0m [33mapplication/json[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:541)
+2021-11-27 21:43:48.566369 UTC       WARN rocket::rocket - [36m([0m[37mlogout[0m[36m)[0m [32mPOST[0m [4;34m/api/v1[0m[34m/logout[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:541)
+2021-11-27 21:43:48.566394 UTC       WARN rocket::rocket - [36m([0m[37madd[0m[36m)[0m [32mPOST[0m [4;34m/api/v1[0m[34m/category[0m [33mapplication/json[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:541)
+2021-11-27 21:43:48.566416 UTC       WARN rocket::rocket - [36m([0m[37mget_one[0m[36m)[0m [32mGET[0m [4;34m/api/v1[0m[34m/category[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:541)
+2021-11-27 21:43:48.566452 UTC       WARN rocket::rocket - [36m([0m[37mget_one[0m[36m)[0m [32mGET[0m [4;34m/api/v1[0m[34m/user/<id>[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:541)
+2021-11-27 21:43:48.566490 UTC       WARN rocket::rocket - [36m([0m[37medit[0m[36m)[0m [32mPUT[0m [4;34m/api/v1[0m[34m/user/<email>[0m [33mapplication/json[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:541)
+2021-11-27 21:43:48.566520 UTC       WARN rocket::rocket - [36m([0m[37mput[0m[36m)[0m [32mPUT[0m [4;34m/api/v1[0m[34m/category/<id>[0m [33mapplication/json[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:541)
+2021-11-27 21:43:48.566544 UTC       WARN rocket::rocket - [36m([0m[37mget[0m[36m)[0m [32mGET[0m [4;34m/api/v1[0m[34m/category/<name>[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:541)
+2021-11-27 21:43:48.566569 UTC       WARN rocket::rocket - [36m([0m[37mdelete[0m[36m)[0m [32mDELETE[0m [4;34m/api/v1[0m[34m/user/<name>/delete[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:541)
+2021-11-27 21:43:48.566590 UTC       WARN rocket::rocket - [36m([0m[37mfetch_by_cookie[0m[36m)[0m [32mGET[0m [4;34m/api/v1[0m[34m/user/cookie/<email>[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:541)
+2021-11-27 21:43:48.566614 UTC       WARN rocket::rocket - [36m([0m[37mdelete[0m[36m)[0m [32mDELETE[0m [4;34m/api/v1[0m[34m/category/<name>/delete[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:541)
+2021-11-27 21:43:48.566725 UTC       WARN rocket::rocket - 👾 [35mCatchers[0m:  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:534)
+2021-11-27 21:43:48.566867 UTC       WARN rocket::rocket - [36m([0m[37mnot_found[0m[36m)[0m [34m404[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:541)
+2021-11-27 21:43:48.566965 UTC       WARN rocket::fairing::fairings - 📡 [35mFairings[0m:  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/fairing/fairings.rs:166)
+2021-11-27 21:43:48.566999 UTC       WARN rocket::fairing::fairings - [1;49;39mShield[0m ([1;34mliftoff, response, singleton[0m)  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/fairing/fairings.rs:169)
+2021-11-27 21:43:48.568123 UTC       INFO rocket::shield::shield - 🛡️ [35mShield[0m:
+2021-11-27 21:43:48.568245 UTC       INFO rocket::shield::shield - X-Content-Type-Options: [49;39mnosniff[0m
+2021-11-27 21:43:48.568257 UTC       INFO rocket::shield::shield - X-Frame-Options: [49;39mSAMEORIGIN[0m
+2021-11-27 21:43:48.568279 UTC       INFO rocket::shield::shield - Permissions-Policy: [49;39minterest-cohort=()[0m
+2021-11-27 21:43:48.568355 UTC       WARN rocket::rocket - 🚀 [1;49;39mRocket has launched from[0m [1;4;49;39mhttp://127.0.0.1:8000[0m  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/rocket.rs:624)
+2021-11-27 21:48:46.955954 UTC       WARN rocket::server - Received SIGINT. Requesting shutdown.  (/Users/borngraced/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.5.0-rc.1/src/server.rs:440)
+2021-11-27 21:48:46.956093 UTC       INFO rocket::server - Received shutdown request. Waiting for pending I/O...

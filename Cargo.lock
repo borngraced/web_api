@@ -1418,23 +1418,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "post_db"
-version = "0.1.0"
-dependencies = [
- "bcrypt",
- "bson",
- "dotenv",
- "fast_log",
- "jsonwebtoken",
- "log",
- "mongodb",
- "regex",
- "rocket",
- "serde",
- "serde_json",
-]
-
-[[package]]
 name = "ppv-lite86"
 version = "0.2.15"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1699,6 +1682,25 @@ dependencies = [
  "time 0.2.27",
  "tokio",
  "uncased",
+]
+
+[[package]]
+name = "rust_web_api"
+version = "0.1.0"
+dependencies = [
+ "base64 0.13.0",
+ "bcrypt",
+ "bson",
+ "chrono",
+ "dotenv",
+ "fast_log",
+ "jsonwebtoken",
+ "log",
+ "mongodb",
+ "regex",
+ "rocket",
+ "serde",
+ "serde_json",
 ]
 
 [[package]]

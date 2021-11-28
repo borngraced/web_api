@@ -12,7 +12,7 @@ use mongodb::{
 use rocket::{futures::TryStreamExt, http::Status, response::content::Json};
 use serde::{Deserialize, Serialize};
 
-#[derive(Debug, Serialize, Deserialize)]
+#[derive(Debug, Deserialize)]
 pub struct User {
     pub _id: ObjectId,
     pub username: String,
@@ -24,10 +24,20 @@ pub struct User {
 
 #[derive(Deserialize, Debug, Clone)]
 pub struct Input {
+    pub _id: ObjectId,
     pub username: String,
     pub email: String,
     pub age: i32,
     pub password: String,
+    pub country: String,
+}
+
+#[derive(Debug, Deserialize, Serialize)]
+pub struct UserOutput {
+    pub _id: ObjectId,
+    pub username: String,
+    pub email: String,
+    pub age: i32,
     pub country: String,
 }
 
@@ -93,13 +103,10 @@ pub async fn post(data: &Input, db: &Database) -> Result<InsertOneResult, ErrorT
     }
 }
 
-pub async fn get_one(email: &Option<String>, db: &Database) -> Result<AuthInfo, ErrorT> {
+pub async fn login(email: &Option<String>, db: &Database) -> Result<AuthInfo, ErrorT> {
     let folder = db.collection::<User>("users");
     let e = email.as_ref().unwrap();
     let q = doc! {"email":  e};
-    //let q2 = doc! {"_id":  ObjectId::with_string(best) };
-    //let fakeget = folder.find_one(q2, None).await;
-   // println!("{:?}", fakeget);
     let load_user = folder.find_one(q, None).await;
     match load_user {
         Ok(t) => match t {
@@ -122,20 +129,48 @@ pub async fn get_one(email: &Option<String>, db: &Database) -> Result<AuthInfo, 
     }
 }
 
-pub async fn get(db: &Database) -> Result<Vec<User>, ErrorT> {
+pub async fn get_one(email: &Option<String>, db: &Database) -> Result<UserOutput, ErrorT> {
+    let folder = db.collection::<User>("users");
+    let e = email.as_ref().unwrap();
+    let q = doc! {"email":  e};
+    let load_user = folder.find_one(q, None).await;
+    match load_user {
+        Ok(t) => match t {
+            Some(u) => {
+                let user = Box::new(u);
+                Ok(UserOutput {
+                    _id: user._id,
+                    username: user.username,
+                    email: user.email,
+                    age: user.age,
+                    country: user.country,
+                })
+            }
+            None => Err(ErrorT {
+                status: Status::NotFound,
+                message: "No user found".to_string(),
+            }),
+        },
+        Err(_) => Err(ErrorT {
+            status: Status::NotFound,
+            message: "No user found".to_string(),
+        }),
+    }
+}
+
+pub async fn get(db: &Database) -> Result<Vec<UserOutput>, ErrorT> {
     let folder = db.collection::<User>("users");
 
     let mut cursor = folder.find(None, None).await.unwrap();
     match cursor.try_next().await {
         Ok(data) => match data {
             Some(data) => {
-                let mut load_user: Vec<User> = vec![];
-                load_user.push(User {
+                let mut load_user: Vec<UserOutput> = vec![];
+                load_user.push(UserOutput {
                     _id: data._id,
                     username: data.username,
                     email: data.email,
                     age: data.age,
-                    password: data.password,
                     country: data.country,
                 });
                 Ok(load_user)

@@ -1,22 +1,17 @@
+use crate::middleware::auth::{account_decoder, account_encoder};
 use crate::model;
 use crate::model::User;
 use crate::{connection::DB, model::user};
 //use model::category;
 use crate::error::ErrorT;
 use crate::middleware;
-use middleware::auth::{hash_password, verify_password, AuthenticatedUser};
+use middleware::auth::{verify_password, AuthenticatedUser};
 use model::user::Input;
 use mongodb::results::InsertOneResult;
 use mongodb::results::{DeleteResult, UpdateResult};
 use rocket::http::{Cookie, Status};
 use rocket::Request;
 pub use rocket::{http::CookieJar, http::Header, serde::json::Json, State};
-
-#[get("/test")]
-pub async fn _test(_auth: AuthenticatedUser) -> String {
-    let header = hash_password(&"ope".to_string());
-    header
-}
 
 #[get("/login", format = "json", data = "<data>")]
 pub async fn login(
@@ -25,19 +20,21 @@ pub async fn login(
     cookies: &CookieJar<'_>,
 ) -> Json<Option<String>> {
     let auth_info_clone = data.clone();
-    let folder = user::get_one(&Some(auth_info_clone.email), &state.db).await;
+    let folder = user::login(&Some(auth_info_clone.email), &state.db).await;
     match folder {
         Ok(t) => {
-            //verify user with password and if valid add to cookie and return user's email
+            // verify user with password and if valid add to cookie and return user's email
             if verify_password(&auth_info_clone.password, &t.password) {
-                cookies.add_private(Cookie::new("email", t.email.to_string()));
-                Json(Some(t.email))
+                let user_details = format!("{}:{}", t.email, &t.password);
+                let account_token = account_encoder(user_details);
+                cookies.add_private(Cookie::new("email", t.email));
+                Json(Some(account_token))
             } else {
-                //Return nothing if password doesn't match records
+                // return nothing if password doesn't match records
                 Json(Some("Password does't match account".to_string()))
             }
         }
-        //Return nothing if err
+        // return nothing if error
         Err(_) => Json(Some("No user found".to_string())),
     }
 }
@@ -47,7 +44,7 @@ pub async fn fetch_by_cookie(
     db: &State<DB>,
     email: String,
     cookies: &CookieJar<'_>,
-) -> Result<Json<user::AuthInfo>, ErrorT> {
+) -> Result<Json<user::UserOutput>, ErrorT> {
     let user_logged_in = cookies.get_private("email");
     match user_logged_in {
         Some(t) => {
@@ -78,33 +75,26 @@ pub async fn fetch_by_cookie(
 pub async fn get(
     state: &State<DB>,
     _auth: AuthenticatedUser,
-) -> Result<Json<Vec<user::User>>, ErrorT> {
+) -> Result<Json<Vec<user::UserOutput>>, ErrorT> {
     let folder = user::get(&state.db).await;
     match folder {
-        Ok(data) => {
-            println!("{:?}", &data[0]._id);
-            Ok(Json(data))
-        }
+        Ok(data) => Ok(Json(data)),
         Err(e) => return Err(e),
     }
 }
 
-#[get("/user/<ido>")]
+#[get("/user/<id>")]
 pub async fn get_one(
     state: &State<DB>,
     _auth: AuthenticatedUser,
-    ido: String
-) -> Result<Json<Vec<user::User>>, ErrorT> {
-    let folder = user::get(&state.db).await;
+    id: String,
+) -> Result<Json<user::UserOutput>, ErrorT> {
+    let folder = user::get_one(&Some(id), &state.db).await;
     match folder {
-        Ok(data) => {
-            println!("{:?}", &data[0]._id);
-            Ok(Json(data))
-        }
+        Ok(data) => Ok(Json(data)),
         Err(e) => return Err(e),
     }
 }
-
 
 #[post("/user", format = "json", data = "<input>")]
 pub async fn new(input: Json<Input>, state: &State<DB>) -> Result<Json<InsertOneResult>, ErrorT> {
@@ -132,7 +122,8 @@ pub async fn edit(
     state: &State<DB>,
     _auth: AuthenticatedUser,
 ) -> Json<Option<UpdateResult>> {
-    if _auth.email == email {
+    let decoded_token = account_decoder(_auth.token).unwrap();
+    if decoded_token.email == email {
         let category = user::edit(&input, &email, &state.db).await.unwrap();
         Json(Some(category))
     } else {
